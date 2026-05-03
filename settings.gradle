@@ -1,0 +1,29 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven {
+            name = "NeoForged"
+            url = uri("https://maven.neoforged.net/releases")
+        }
+    }
+}
+
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+        maven {
+            name = "NeoForged"
+            url = uri("https://maven.neoforged.net/releases")
+        }
+        maven {
+            name = "CurseMaven"
+            url = uri("https://cursemaven.com")
+        }
+        maven {
+            name = "MrCrayfish"
+            url = uri("https://maven.mrcrayfish.com/releases")
+        }
+    }
+}
+
+rootProject.name = "AugmentedBackpacks"

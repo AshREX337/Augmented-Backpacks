@@ -1,0 +1,42 @@
+{
+  "augment.augmented.crafting": "Gridlock",
+  "augment.augmented.crafting.desc": "Adds a portable crafting grid to the backpack",
+  "augment.augmented.crafting.craftable_items": "Craftable Items",
+  "augment.augmented.crafting.craft_item": "Craft Item",
+  "augment.augmented.crafting.select_to_craft": "Select an item to craft from the grid below",
+  "augment.augmented.crafting.selected": "Selected: %s",
+  "augment.augmented.crafting.click_to_craft": "Click to craft item",
+  "augment.augmented.crafting.auto_pull": "Auto-pull from Inventory",
+  "augment.augmented.crafting.clear_grid": "Clear Grid",
+  "augment.augmented.crafting.no_recipe": "No recipe found!",
+  "augment.augmented.crafting.insufficient_materials": "Not enough materials!",
+  "augment.augmented.crafting.crafted": "Crafted %s",
+
+  "augment.augmented.swapping": "Switchup",
+  "augment.augmented.swapping.desc": "Automatically swaps the held tool for one inside the backpack that matches the block being mined.",
+
+  "augment.augmented.experience": "Savestate",
+  "augment.augmented.experience.desc": "Stores up to 30 levels and returns it to the player after death.\nCan store 60 levels when used with §dRecall§r.",
+  "augment.backpacked.experience.title": "Stored EXP",
+
+  "augment.augmented.feeding": "Gutquench",
+  "augment.augmented.feeding.desc": "Auto feeds the player from the backpack.\nCan be configured to prioritize feeding based on nutrition or saturation.\nOnly one priority can be selected.",
+  "augment.backpacked.feeding.nutrition": "Hunger",
+  "augment.backpacked.feeding.nutrition.tooltip": "Prioritize Hunger as criteria to consume food. Food will only be consumed if hunger is less than the foods nutrition value.",
+  "augment.backpacked.feeding.saturation": "Fullness",
+  "augment.backpacked.feeding.saturation.tooltip": "Prioritize Fullness as criteria to consume food. Food will only be consumed if fullness is less than the foods saturation value.",
+
+  "backpacked.gui.search_hint": "Search...",
+  "backpacked.gui.active": "Active",
+  "backpacked.gui.filters": "Filters",
+  "backpacked.gui.show_all": "Show All",
+  "backpacked.gui.activated_only": "Active Only",
+  "backpacked.gui.x_of_y": "%s/%s",
+  "backpacked.gui.options": "Options",
+  "backpacked.gui.on": "On",
+  "backpacked.gui.off": "Off",
+  "backpacked.gui.open": "Open",
+
+  "container.crafting": "Crafting",
+  "container.inventory": "Inventory"
+}
