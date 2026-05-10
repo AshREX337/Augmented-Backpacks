@@ -12,3 +12,10 @@
 /setblock ~ ~ ~ minecraft:nether_quartz_ore
 /xp add @s 20 levels
 /xp set @s 50 levels
+/clear
+/give @s oak_wood 64
+/give @s oak_log 64
+/cler
+/clear
+/give @s oak_wood 64
+/clear

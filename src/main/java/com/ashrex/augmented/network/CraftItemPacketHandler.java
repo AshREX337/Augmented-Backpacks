@@ -3,11 +3,15 @@ package com.ashrex.augmented.network;
 
 import com.ashrex.augmented.AugmentedMod;
 import com.mrcrayfish.backpacked.inventory.BackpackInventory;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.util.context.ContextMap;
 import net.minecraft.world.Container;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.network.chat.Component;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
@@ -18,103 +22,66 @@ public class CraftItemPacketHandler
 {
     public static void handle(CraftItemPacket packet, IPayloadContext context)
     {
-        System.out.println("========================================");
-        System.out.println("PACKET RECEIVED!!!");
-        System.out.println("Recipe ID: " + packet.recipeId());
-        System.out.println("========================================");
-
-        if(context.flow().isClientbound()) {
-            System.out.println("ERROR: Received on client side!");
-            return;
-        }
-
         context.enqueueWork(() -> {
-            if(!(context.player() instanceof ServerPlayer serverPlayer)) {
-                System.out.println("ERROR: Not a ServerPlayer!");
-                return;
-            }
+            if (!(context.player() instanceof ServerPlayer serverPlayer)) return;
 
-            System.out.println("Processing craft for player: " + serverPlayer.getName().getString());
+            Identifier itemId = packet.itemId();
+            net.minecraft.world.item.Item targetItem = BuiltInRegistries.ITEM.getValue(itemId);
+            if (targetItem == null || targetItem == Items.AIR) return;
 
-            Optional<RecipeHolder<?>> recipeOpt = serverPlayer.level().recipeAccess()
-                    .byKey(ResourceKey.create(Registries.RECIPE, packet.recipeId()));
-
-            if(recipeOpt.isEmpty()) {
-                System.out.println("ERROR: Recipe not found!");
-                serverPlayer.displayClientMessage(
-                        Component.translatable("augment.augmented.crafting.no_recipe"), true);
-                return;
-            }
-
-            RecipeHolder<?> holder = recipeOpt.get();
-            if(!(holder.value() instanceof CraftingRecipe recipe)) {
-                System.out.println("ERROR: Not a CraftingRecipe!");
-                serverPlayer.displayClientMessage(
-                        Component.translatable("augment.augmented.crafting.no_recipe"), true);
-                return;
-            }
-
-            System.out.println("Recipe found: " + recipe.getClass().getSimpleName());
-
-            // Get the backpack inventory if it exists
-            BackpackInventory backpackInv = null;
-            if(serverPlayer.containerMenu != null &&
-                    serverPlayer.containerMenu.slots.size() > 0) {
-                Container container = serverPlayer.containerMenu.slots.get(0).container;
-                if(container instanceof BackpackInventory) {
-                    backpackInv = (BackpackInventory) container;
-                    System.out.println("Found backpack inventory!");
+            // Find first matching crafting recipe for this item
+            RecipeHolder<CraftingRecipe> foundRecipe = null;
+            for (RecipeHolder<?> holder : serverPlayer.level().recipeAccess().getRecipes()) {
+                if (!(holder.value() instanceof CraftingRecipe recipe)) continue;
+                ItemStack result = recipe.display().isEmpty() ? ItemStack.EMPTY
+                        : recipe.display().get(0).result().resolveForFirstStack(ContextMap.EMPTY);
+                if (result.getItem() == targetItem) {
+                    foundRecipe = new RecipeHolder<>(holder.id(), recipe);
+                    break;
                 }
             }
 
-            // Build a crafting input from available items
+            if (foundRecipe == null) {
+                serverPlayer.displayClientMessage(
+                        Component.translatable("augment.augmented.crafting.no_recipe"), true);
+                return;
+            }
+
+            CraftingRecipe recipe = foundRecipe.value();
+
+            BackpackInventory backpackInv = null;
+            if (serverPlayer.containerMenu != null && serverPlayer.containerMenu.slots.size() > 0) {
+                Container container = serverPlayer.containerMenu.slots.get(0).container;
+                if (container instanceof BackpackInventory) {
+                    backpackInv = (BackpackInventory) container;
+                }
+            }
+
             List<ItemStack> ingredients = new ArrayList<>();
-            if(!gatherIngredients(serverPlayer, backpackInv, recipe, ingredients)) {
-                System.out.println("ERROR: Could not gather ingredients!");
+            if (!gatherIngredients(serverPlayer, backpackInv, recipe, ingredients)) {
                 serverPlayer.displayClientMessage(
                         Component.translatable("augment.augmented.crafting.insufficient_materials"), true);
                 return;
             }
 
-            System.out.println("Ingredients gathered: " + ingredients.size());
-
-            // Create CraftingInput for 1.21.1
             CraftingInput craftingInput = CraftingInput.of(3, 3, ingredients);
-
-            // Get result
             ItemStack result = recipe.assemble(craftingInput, serverPlayer.level().registryAccess());
 
-            if(result.isEmpty()) {
-                System.out.println("ERROR: Empty result!");
-                return;
-            }
+            if (result.isEmpty()) return;
 
-            System.out.println("Result: " + result.getItem() + " x" + result.getCount());
-
-            // Consume ingredients
             consumeIngredients(serverPlayer, backpackInv, ingredients);
 
-            // Give result
             ItemStack resultCopy = result.copy();
-            if(!serverPlayer.getInventory().add(resultCopy)) {
+            if (!serverPlayer.getInventory().add(resultCopy)) {
                 serverPlayer.drop(resultCopy, false);
             }
 
-            // Force sync
-            if(backpackInv != null) {
-                backpackInv.setChanged();
-            }
+            if (backpackInv != null) backpackInv.setChanged();
             serverPlayer.inventoryMenu.broadcastChanges();
 
-            System.out.println("Crafting complete!");
-
             serverPlayer.displayClientMessage(
-                    Component.translatable("augment.augmented.crafting.crafted",
-                            result.getHoverName()),
-                    true
-            );
+                    Component.translatable("augment.augmented.crafting.crafted", result.getHoverName()), true);
         }).exceptionally(throwable -> {
-            System.out.println("EXCEPTION during crafting!");
             throwable.printStackTrace();
             return null;
         });

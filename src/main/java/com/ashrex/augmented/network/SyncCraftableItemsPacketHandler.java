@@ -8,6 +8,6 @@ public class SyncCraftableItemsPacketHandler
 {
     public static void handle(SyncCraftableItemsPacket packet, IPayloadContext context)
     {
-        context.enqueueWork(() -> ClientRecipeCache.update(packet.recipeIds()));
+        context.enqueueWork(() -> ClientRecipeCache.update(packet.recipeIngredients()));
     }
 }

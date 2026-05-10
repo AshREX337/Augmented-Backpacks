@@ -1,44 +1,5 @@
 {
   "stats": {
-    "minecraft:picked_up": {
-      "minecraft:quartz": 4,
-      "minecraft:dirt": 8,
-      "minecraft:sunflower": 2,
-      "minecraft:white_wool": 2,
-      "minecraft:feather": 3,
-      "minecraft:chicken": 3,
-      "minecraft:bone": 2,
-      "minecraft:arrow": 4,
-      "minecraft:andesite": 2,
-      "minecraft:rotten_flesh": 7,
-      "minecraft:coal": 2,
-      "backpacked:backpack": 1,
-      "minecraft:wheat_seeds": 1,
-      "minecraft:mutton": 10,
-      "minecraft:netherite_sword": 1
-    },
-    "minecraft:used": {
-      "minecraft:copper_pickaxe": 8,
-      "minecraft:netherite_sword": 30,
-      "minecraft:netherite_axe": 1,
-      "minecraft:golden_shovel": 8
-    },
-    "minecraft:custom": {
-      "minecraft:time_since_rest": 4355,
-      "minecraft:walk_one_cm": 13407,
-      "minecraft:leave_game": 3,
-      "minecraft:mob_kills": 11,
-      "minecraft:damage_taken": 310,
-      "minecraft:damage_dealt": 1330,
-      "minecraft:play_time": 10505,
-      "minecraft:jump": 127,
-      "minecraft:time_since_death": 4330,
-      "minecraft:sprint_one_cm": 14369,
-      "minecraft:fall_one_cm": 4025,
-      "minecraft:total_world_time": 11810,
-      "minecraft:fly_one_cm": 37565,
-      "minecraft:deaths": 1
-    },
     "minecraft:killed": {
       "minecraft:horse": 1,
       "minecraft:husk": 3,
@@ -59,6 +20,45 @@
     },
     "minecraft:killed_by": {
       "minecraft:husk": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 8122,
+      "minecraft:walk_one_cm": 13790,
+      "minecraft:leave_game": 5,
+      "minecraft:mob_kills": 11,
+      "minecraft:damage_taken": 310,
+      "minecraft:damage_dealt": 1330,
+      "minecraft:play_time": 14272,
+      "minecraft:jump": 127,
+      "minecraft:time_since_death": 8097,
+      "minecraft:sprint_one_cm": 14369,
+      "minecraft:fall_one_cm": 4025,
+      "minecraft:total_world_time": 17572,
+      "minecraft:fly_one_cm": 37565,
+      "minecraft:deaths": 1
+    },
+    "minecraft:used": {
+      "minecraft:copper_pickaxe": 8,
+      "minecraft:netherite_sword": 30,
+      "minecraft:netherite_axe": 1,
+      "minecraft:golden_shovel": 8
+    },
+    "minecraft:picked_up": {
+      "minecraft:quartz": 4,
+      "minecraft:dirt": 8,
+      "minecraft:sunflower": 2,
+      "minecraft:white_wool": 2,
+      "minecraft:feather": 3,
+      "minecraft:chicken": 3,
+      "minecraft:bone": 2,
+      "minecraft:arrow": 4,
+      "minecraft:andesite": 2,
+      "minecraft:rotten_flesh": 7,
+      "minecraft:coal": 2,
+      "backpacked:backpack": 1,
+      "minecraft:wheat_seeds": 1,
+      "minecraft:mutton": 10,
+      "minecraft:netherite_sword": 1
     }
   },
   "DataVersion": 4671

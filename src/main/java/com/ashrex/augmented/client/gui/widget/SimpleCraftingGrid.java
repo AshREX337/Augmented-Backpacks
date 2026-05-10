@@ -20,15 +20,9 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.ARGB;
 import net.minecraft.util.Mth;
-import net.minecraft.util.context.ContextMap;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.CraftingRecipe;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.crafting.RecipeHolder;
-import net.minecraft.world.item.crafting.RecipeType;
-import net.neoforged.api.distmarker.Dist;
-import net.neoforged.api.distmarker.OnlyIn;
 import org.jetbrains.annotations.Nullable;
 import org.lwjgl.glfw.GLFW;
 
@@ -54,10 +48,6 @@ public class SimpleCraftingGrid<T extends FilterableItems<T>> extends FrameworkS
     );
     private static final int CLICK_ANIMATION_DURATION = 10;
     private static final int UPDATE_INTERVAL = 40;
-
-    private static List<RecipeHolder<CraftingRecipe>> ALL_RECIPES_CACHE = null;
-    private static Map<net.minecraft.world.item.Item, List<RecipeHolder<CraftingRecipe>>> RECIPES_BY_RESULT_CACHE = null;
-    private static long LAST_RECIPE_UPDATE = 0;
 
     private final Supplier<T> supplier;
     private final Consumer<T> updater;
@@ -139,7 +129,8 @@ public class SimpleCraftingGrid<T extends FilterableItems<T>> extends FrameworkS
         Set<net.minecraft.world.item.Item> knownItems = new HashSet<>();
         for (Identifier id : com.ashrex.augmented.client.ClientRecipeCache.getAllIds()) {
             net.minecraft.world.item.Item item = BuiltInRegistries.ITEM.getValue(id);
-            if (item != null && item != Items.AIR && !knownItems.contains(item)) {
+            if (item == null || item == Items.AIR || knownItems.contains(item)) continue;
+            if (canCraftItem(item)) {
                 craftableItemsCache.add(item);
                 knownItems.add(item);
             }
@@ -179,9 +170,36 @@ public class SimpleCraftingGrid<T extends FilterableItems<T>> extends FrameworkS
         }
     }
 
-    private boolean canCraftRecipe(CraftingRecipe recipe) {
-        // validation is done server-side, always return true here
-        return true;
+    private boolean canCraftItem(net.minecraft.world.item.Item item)
+    {
+        Identifier itemId = BuiltInRegistries.ITEM.getKey(item);
+        List<List<List<Identifier>>> recipes = com.ashrex.augmented.client.ClientRecipeCache.getRecipes(itemId);
+        if (recipes.isEmpty()) return false;
+
+        Map<Identifier, Integer> available = new HashMap<>();
+        for (Map.Entry<net.minecraft.world.item.Item, Integer> entry : inventoryCounts.entrySet()) {
+            available.put(BuiltInRegistries.ITEM.getKey(entry.getKey()), entry.getValue());
+        }
+
+        for (List<List<Identifier>> recipe : recipes) {
+            Map<Identifier, Integer> copy = new HashMap<>(available);
+            boolean canCraft = true;
+            for (List<Identifier> slot : recipe) {
+                // Find any valid item from this slot in inventory
+                boolean slotSatisfied = false;
+                for (Identifier validItem : slot) {
+                    int count = copy.getOrDefault(validItem, 0);
+                    if (count > 0) {
+                        copy.put(validItem, count - 1);
+                        slotSatisfied = true;
+                        break;
+                    }
+                }
+                if (!slotSatisfied) { canCraft = false; break; }
+            }
+            if (canCraft) return true;
+        }
+        return false;
     }
 
     public void setSearchQuery(String searchQuery)
@@ -328,43 +346,11 @@ public class SimpleCraftingGrid<T extends FilterableItems<T>> extends FrameworkS
         {
             if (parent.mc.level == null || parent.mc.player == null) return;
 
-            parent.updateRecipeCache();
-
-            if (RECIPES_BY_RESULT_CACHE == null) {
-                parent.mc.player.displayClientMessage(
-                        Component.translatable("augment.ashrex_augmented.crafting.no_recipe"), true);
-                return;
-            }
-
-            List<RecipeHolder<CraftingRecipe>> recipes = RECIPES_BY_RESULT_CACHE.get(item);
-            if (recipes == null || recipes.isEmpty()) {
-                parent.mc.player.displayClientMessage(
-                        Component.translatable("augment.ashrex_augmented.crafting.no_recipe"), true);
-                return;
-            }
-
-            RecipeHolder<CraftingRecipe> craftableRecipe = null;
-            for (RecipeHolder<CraftingRecipe> recipeHolder : recipes) {
-                if (parent.canCraftRecipe(recipeHolder.value())) {
-                    craftableRecipe = recipeHolder;
-                    break;
-                }
-            }
-
-            if (craftableRecipe == null) {
-                parent.mc.player.displayClientMessage(
-                        Component.translatable("augment.ashrex_augmented.crafting.cannot_craft"), true);
-                return;
-            }
-
-            try {
-                com.ashrex.augmented.network.CraftItemPacket packet =
-                        new com.ashrex.augmented.network.CraftItemPacket(craftableRecipe.id().identifier());
-                parent.mc.getConnection().send(packet);
-                parent.needsFullRebuild = true;
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+            Identifier itemId = BuiltInRegistries.ITEM.getKey(item);
+            com.ashrex.augmented.network.CraftItemPacket packet =
+                    new com.ashrex.augmented.network.CraftItemPacket(itemId);
+            parent.mc.getConnection().send(packet);
+            parent.needsFullRebuild = true;
         }
     }
 

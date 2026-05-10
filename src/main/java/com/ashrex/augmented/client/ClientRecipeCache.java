@@ -1,25 +1,26 @@
-// ClientRecipeCache.java
 package com.ashrex.augmented.client;
 
 import net.minecraft.resources.Identifier;
-import java.util.List;
-import java.util.Set;
-import java.util.HashSet;
+
+import java.util.*;
 
 public class ClientRecipeCache
 {
-    private static final Set<Identifier> KNOWN_RECIPE_IDS = new HashSet<>();
+    private static final Map<Identifier, List<List<List<Identifier>>>> RECIPE_INGREDIENTS = new HashMap<>();
 
-    public static void update(List<Identifier> ids) {
-        KNOWN_RECIPE_IDS.clear();
-        KNOWN_RECIPE_IDS.addAll(ids);
+    public static void update(Map<Identifier, List<List<List<Identifier>>>> data)
+    {
+        RECIPE_INGREDIENTS.clear();
+        RECIPE_INGREDIENTS.putAll(data);
     }
 
-    public static boolean hasRecipeFor(Identifier id) {
-        return KNOWN_RECIPE_IDS.contains(id);
+    public static Set<Identifier> getAllIds()
+    {
+        return RECIPE_INGREDIENTS.keySet();
     }
 
-    public static Set<Identifier> getAllIds() {
-        return KNOWN_RECIPE_IDS;
+    public static List<List<List<Identifier>>> getRecipes(Identifier itemId)
+    {
+        return RECIPE_INGREDIENTS.getOrDefault(itemId, List.of());
     }
 }

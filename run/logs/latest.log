@@ -1,17 +1,17 @@
-[10May2026 12:48:21.807] [main/INFO] [net.neoforged.fml.startup.Entrypoint/]: JVM Uptime at startup: 51ms
-[10May2026 12:48:21.811] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Starting FancyModLoader version 10.0.36 (CLIENT in DEV)
-[10May2026 12:48:21.811] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Game directory: /Users/ashwinavadhanula/Ash/Minecraft Mod/Augmented-Backpacks/Augmented-Backpacks/run
-[10May2026 12:48:21.835] [main/INFO] [net.neoforged.fml.loading.EarlyServiceDiscovery/]: Found 2 early service jars (out of 102) in 7ms
-[10May2026 12:48:21.835] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Loading FML Early Services:
-[10May2026 12:48:21.835] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - /Users/ashwinavadhanula/.gradle/caches/modules-2/files-2.1/net.neoforged.fancymodloader/earlydisplay/10.0.36/dbd0e11d545443f602addede111c39d9639708f9/earlydisplay-10.0.36.jar
-[10May2026 12:48:21.835] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - /Users/ashwinavadhanula/.gradle/caches/modules-2/files-2.1/net.neoforged.fancymodloader/loader/10.0.36/f72ab4d3e755fe736829883d90430a281527aca/loader-10.0.36.jar
-[10May2026 12:48:21.837] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
-[10May2026 12:48:22.009] [main/WARN] [EARLYDISPLAY/]: Failed to set window icon: [0x1000C] Cocoa: Regular windows do not have icons on macOS
-[10May2026 12:48:22.109] [ForkJoinPool.commonPool-worker-8/INFO] [net.neoforged.fml.loading.moddiscovery.locators.GameLocator/]: Detected a joined NeoForge and Minecraft configuration. Applying filtering...
-[10May2026 12:48:22.134] [ForkJoinPool.commonPool-worker-8/INFO] [net.neoforged.fml.loading.moddiscovery.locators.InDevFolderLocator/CORE]: Got mod coordinates augmented%%/Users/ashwinavadhanula/Ash/Minecraft Mod/Augmented-Backpacks/Augmented-Backpacks/build/classes/java/main:augmented%%/Users/ashwinavadhanula/Ash/Minecraft Mod/Augmented-Backpacks/Augmented-Backpacks/build/resources/main from env
-[10May2026 12:48:22.186] [fml-loadingscreen/INFO] [net.neoforged.fml.earlydisplay.render.LoadingScreenRenderer/]: GL info: Apple M3 Pro GL version 4.1 Metal - 89.4, Apple
-[10May2026 12:48:22.220] [ForkJoinPool.commonPool-worker-8/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
-[10May2026 12:48:22.221] [ForkJoinPool.commonPool-worker-8/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+[10May2026 16:02:54.251] [main/INFO] [net.neoforged.fml.startup.Entrypoint/]: JVM Uptime at startup: 59ms
+[10May2026 16:02:54.255] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Starting FancyModLoader version 10.0.36 (CLIENT in DEV)
+[10May2026 16:02:54.255] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Game directory: /Users/ashwinavadhanula/Ash/Minecraft Mod/Augmented-Backpacks/Augmented-Backpacks/run
+[10May2026 16:02:54.280] [main/INFO] [net.neoforged.fml.loading.EarlyServiceDiscovery/]: Found 2 early service jars (out of 102) in 8ms
+[10May2026 16:02:54.280] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Loading FML Early Services:
+[10May2026 16:02:54.280] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - /Users/ashwinavadhanula/.gradle/caches/modules-2/files-2.1/net.neoforged.fancymodloader/earlydisplay/10.0.36/dbd0e11d545443f602addede111c39d9639708f9/earlydisplay-10.0.36.jar
+[10May2026 16:02:54.281] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - /Users/ashwinavadhanula/.gradle/caches/modules-2/files-2.1/net.neoforged.fancymodloader/loader/10.0.36/f72ab4d3e755fe736829883d90430a281527aca/loader-10.0.36.jar
+[10May2026 16:02:54.283] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[10May2026 16:02:54.489] [main/WARN] [EARLYDISPLAY/]: Failed to set window icon: [0x1000C] Cocoa: Regular windows do not have icons on macOS
+[10May2026 16:02:54.598] [ForkJoinPool.commonPool-worker-11/INFO] [net.neoforged.fml.loading.moddiscovery.locators.GameLocator/]: Detected a joined NeoForge and Minecraft configuration. Applying filtering...
+[10May2026 16:02:54.631] [ForkJoinPool.commonPool-worker-11/INFO] [net.neoforged.fml.loading.moddiscovery.locators.InDevFolderLocator/CORE]: Got mod coordinates augmented%%/Users/ashwinavadhanula/Ash/Minecraft Mod/Augmented-Backpacks/Augmented-Backpacks/build/classes/java/main:augmented%%/Users/ashwinavadhanula/Ash/Minecraft Mod/Augmented-Backpacks/Augmented-Backpacks/build/resources/main from env
+[10May2026 16:02:54.683] [fml-loadingscreen/INFO] [net.neoforged.fml.earlydisplay.render.LoadingScreenRenderer/]: GL info: Apple M3 Pro GL version 4.1 Metal - 89.4, Apple
+[10May2026 16:02:54.735] [ForkJoinPool.commonPool-worker-11/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[10May2026 16:02:54.735] [ForkJoinPool.commonPool-worker-11/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
      Mod List:
 		Name Version (Mod Id)
 
@@ -20,10 +20,10 @@
 		Framework 0.13.11 (framework)
 		Minecraft 1.21.11 (minecraft)
 		NeoForge 21.11.25-beta (neoforge)
-[10May2026 12:48:22.326] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/Users/ashwinavadhanula/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.16.5+mixin.0.8.7/80fc3a9f592673cea87f4cd702f87991c6c9fe4d/sponge-mixin-0.16.5+mixin.0.8.7.jar Service=FML Env=CLIENT
-[10May2026 12:48:22.334] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Loading FML Plugins:
-[10May2026 12:48:22.334] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - /Users/ashwinavadhanula/Ash/Minecraft Mod/Augmented-Backpacks/Augmented-Backpacks/build/moddev/artifacts/neoforge-21.11.25-beta.jar > net.neoforged.neoforge-coremods-21.11.25-beta.jar
-[10May2026 12:48:22.372] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Building game content classloader:
+[10May2026 16:02:54.862] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/Users/ashwinavadhanula/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.16.5+mixin.0.8.7/80fc3a9f592673cea87f4cd702f87991c6c9fe4d/sponge-mixin-0.16.5+mixin.0.8.7.jar Service=FML Env=CLIENT
+[10May2026 16:02:54.871] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Loading FML Plugins:
+[10May2026 16:02:54.871] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - /Users/ashwinavadhanula/Ash/Minecraft Mod/Augmented-Backpacks/Augmented-Backpacks/build/moddev/artifacts/neoforge-21.11.25-beta.jar > net.neoforged.neoforge-coremods-21.11.25-beta.jar
+[10May2026 16:02:54.913] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Building game content classloader:
  - augmented (composite(folder(/Users/ashwinavadhanula/Ash/Minecraft Mod/Augmented-Backpacks/Augmented-Backpacks/build/classes/java/main), folder(/Users/ashwinavadhanula/Ash/Minecraft Mod/Augmented-Backpacks/Augmented-Backpacks/build/resources/main)))
  - backpacked (jar(/Users/ashwinavadhanula/Ash/Minecraft Mod/Augmented-Backpacks/Augmented-Backpacks/libs/backpacked-neoforge-1.21.11-3.0.5.jar))
  - framework (jar(/Users/ashwinavadhanula/Ash/Minecraft Mod/Augmented-Backpacks/Augmented-Backpacks/libs/framework-neoforge-1.21.11-0.13.11.jar))
@@ -31,299 +31,267 @@
  - mixinextras.neoforge (jar(/Users/ashwinavadhanula/Ash/Minecraft Mod/Augmented-Backpacks/Augmented-Backpacks/build/moddev/artifacts/neoforge-21.11.25-beta.jar > mixinextras-neoforge-0.5.0.jar))
  - neoforge (composite(filtered(jar(/Users/ashwinavadhanula/Ash/Minecraft Mod/Augmented-Backpacks/Augmented-Backpacks/build/moddev/artifacts/neoforge-21.11.25-beta.jar))))
  - net.neoforged.fml.generated (empty(VirtualJar/net.neoforged.fml.generated))
-[10May2026 12:48:22.378] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Built game content classloader in 8ms
-[10May2026 12:48:22.398] [main/WARN] [mixin/]: Reference map 'backpacked.refmap.json' for backpacked.common.mixins.json could not be read. If this is a development environment you can ignore this message
-[10May2026 12:48:22.398] [main/WARN] [mixin/]: Reference map 'framework.refmap.json' for framework.common.mixins.json could not be read. If this is a development environment you can ignore this message
-[10May2026 12:48:22.970] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 290 Datafixer optimizations took 135 milliseconds
-[10May2026 12:48:23.396] [pool-10-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
-[10May2026 12:48:25.747] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[10May2026 12:48:25.748] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[10May2026 12:48:25.749] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[10May2026 12:48:25.750] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[10May2026 12:48:25.750] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[10May2026 12:48:25.751] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [waypoint, modify, waypoint, color, reset] and [waypoint, modify, waypoint, color, color] with inputs: [reset]
-[10May2026 12:48:25.777] [modloading-worker-0/INFO] [Augmented Backpacks/]: Initializing Augmented Backpacks - Adding crafting augment to Backpacked
-[10May2026 12:48:25.783] [modloading-worker-0/INFO] [Augmented Backpacks/]: Crafting augment registered
-[10May2026 12:48:25.784] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.11.25-beta, for MC 1.21.11
-[10May2026 12:48:25.831] [modloading-worker-0/INFO] [Framework/SYNCED_ENTITY_DATA]: Registered synced data key backpacked:selected_backpack for minecraft:player
-[10May2026 12:48:25.831] [modloading-worker-0/INFO] [Framework/SYNCED_ENTITY_DATA]: Registered synced data key backpacked:backpack for minecraft:player
-[10May2026 12:48:25.831] [modloading-worker-0/INFO] [Framework/SYNCED_ENTITY_DATA]: Registered synced data key backpacked:backpacks for minecraft:player
-[10May2026 12:48:25.831] [modloading-worker-0/INFO] [Framework/SYNCED_ENTITY_DATA]: Registered synced data key backpacked:cosmetic_backpack for minecraft:player
-[10May2026 12:48:25.831] [modloading-worker-0/INFO] [Framework/SYNCED_ENTITY_DATA]: Registered synced data key backpacked:unlock_tracker for minecraft:player
-[10May2026 12:48:25.831] [modloading-worker-0/INFO] [Framework/SYNCED_ENTITY_DATA]: Registered synced data key backpacked:unlockable_backpack_slots for minecraft:player
-[10May2026 12:48:25.831] [modloading-worker-0/INFO] [Framework/SYNCED_ENTITY_DATA]: Registered synced data key backpacked:trader_pickpocketing for minecraft:wandering_trader
-[10May2026 12:48:25.831] [modloading-worker-0/INFO] [Framework/SYNCED_ENTITY_DATA]: Registered synced data key backpacked:immortal_cooldown for minecraft:player
-[10May2026 12:48:25.831] [modloading-worker-0/INFO] [Framework/SYNCED_ENTITY_DATA]: Registered synced data key backpacked:backpack_scale for minecraft:player
-[10May2026 12:48:26.052] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
-[10May2026 12:48:26.061] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[10May2026 12:48:26.104] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
-[10May2026 12:48:26.313] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Using optional rendering extensions: GL_EXT_texture_filter_anisotropic
-[10May2026 12:48:26.727] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/backpacked, mod/framework, mod/augmented, mod/neoforge
-[10May2026 12:48:26.942] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-17.0.01.hex, loading
-[10May2026 12:48:26.942] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_pua-17.0.01.hex, loading
-[10May2026 12:48:26.985] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-17.0.01.hex, loading
-[10May2026 12:48:27.012] [Render thread/INFO] [Augmented Backpacks/]: Successfully registered crafting augment GUI menu
-[10May2026 12:48:27.495] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/mini_chest_straps:
+[10May2026 16:02:54.919] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Built game content classloader in 11ms
+[10May2026 16:02:54.942] [main/WARN] [mixin/]: Reference map 'backpacked.refmap.json' for backpacked.common.mixins.json could not be read. If this is a development environment you can ignore this message
+[10May2026 16:02:54.942] [main/WARN] [mixin/]: Reference map 'framework.refmap.json' for framework.common.mixins.json could not be read. If this is a development environment you can ignore this message
+[10May2026 16:02:55.617] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 290 Datafixer optimizations took 180 milliseconds
+[10May2026 16:02:55.985] [pool-10-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[10May2026 16:02:58.658] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[10May2026 16:02:58.659] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[10May2026 16:02:58.660] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[10May2026 16:02:58.661] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[10May2026 16:02:58.662] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[10May2026 16:02:58.663] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [waypoint, modify, waypoint, color, reset] and [waypoint, modify, waypoint, color, color] with inputs: [reset]
+[10May2026 16:02:58.689] [modloading-worker-0/INFO] [Augmented Backpacks/]: Initializing Augmented Backpacks - Adding crafting augment to Backpacked
+[10May2026 16:02:58.695] [modloading-worker-0/INFO] [Augmented Backpacks/]: Crafting augment registered
+[10May2026 16:02:58.698] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.11.25-beta, for MC 1.21.11
+[10May2026 16:02:58.764] [modloading-worker-0/INFO] [Framework/SYNCED_ENTITY_DATA]: Registered synced data key backpacked:selected_backpack for minecraft:player
+[10May2026 16:02:58.764] [modloading-worker-0/INFO] [Framework/SYNCED_ENTITY_DATA]: Registered synced data key backpacked:backpack for minecraft:player
+[10May2026 16:02:58.764] [modloading-worker-0/INFO] [Framework/SYNCED_ENTITY_DATA]: Registered synced data key backpacked:backpacks for minecraft:player
+[10May2026 16:02:58.764] [modloading-worker-0/INFO] [Framework/SYNCED_ENTITY_DATA]: Registered synced data key backpacked:cosmetic_backpack for minecraft:player
+[10May2026 16:02:58.764] [modloading-worker-0/INFO] [Framework/SYNCED_ENTITY_DATA]: Registered synced data key backpacked:unlock_tracker for minecraft:player
+[10May2026 16:02:58.764] [modloading-worker-0/INFO] [Framework/SYNCED_ENTITY_DATA]: Registered synced data key backpacked:unlockable_backpack_slots for minecraft:player
+[10May2026 16:02:58.764] [modloading-worker-0/INFO] [Framework/SYNCED_ENTITY_DATA]: Registered synced data key backpacked:trader_pickpocketing for minecraft:wandering_trader
+[10May2026 16:02:58.764] [modloading-worker-0/INFO] [Framework/SYNCED_ENTITY_DATA]: Registered synced data key backpacked:immortal_cooldown for minecraft:player
+[10May2026 16:02:58.764] [modloading-worker-0/INFO] [Framework/SYNCED_ENTITY_DATA]: Registered synced data key backpacked:backpack_scale for minecraft:player
+[10May2026 16:02:59.003] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[10May2026 16:02:59.012] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[10May2026 16:02:59.057] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
+[10May2026 16:02:59.258] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Using optional rendering extensions: GL_EXT_texture_filter_anisotropic
+[10May2026 16:02:59.698] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/backpacked, mod/framework, mod/augmented, mod/neoforge
+[10May2026 16:02:59.960] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-17.0.01.hex, loading
+[10May2026 16:02:59.966] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_pua-17.0.01.hex, loading
+[10May2026 16:03:00.149] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-17.0.01.hex, loading
+[10May2026 16:03:00.175] [Render thread/INFO] [Augmented Backpacks/]: Successfully registered crafting augment GUI menu
+[10May2026 16:03:00.576] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/end_crystal:
     particle
-[10May2026 12:48:27.496] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/piglin_pack:
+[10May2026 16:03:00.576] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/mini_chest_straps:
     particle
-[10May2026 12:48:27.496] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/standard_straps:
+[10May2026 16:03:00.576] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/sheep_plush:
     particle
-[10May2026 12:48:27.496] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/end_crystal:
+[10May2026 16:03:00.576] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/piglin_pack:
     particle
-[10May2026 12:48:27.496] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/sheep_plush:
+[10May2026 16:03:00.576] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/standard_straps:
     particle
-[10May2026 12:48:27.496] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/cogwheel_wheel:
+[10May2026 16:03:00.576] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/cogwheel_wheel:
     particle
-[10May2026 12:48:27.496] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/wandering_bag:
+[10May2026 16:03:00.577] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/wandering_bag:
     particle
-[10May2026 12:48:27.496] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/bamboo_basket:
+[10May2026 16:03:00.577] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/bamboo_basket:
     particle
-[10May2026 12:48:27.496] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/end_crystal_inner:
+[10May2026 16:03:00.577] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/end_crystal_inner:
     particle
-[10May2026 12:48:27.496] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/cogwheel_straps:
+[10May2026 16:03:00.577] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/cogwheel_straps:
     particle
-[10May2026 12:48:27.496] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/rocket:
+[10May2026 16:03:00.577] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/rocket:
     particle
-[10May2026 12:48:27.496] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/turtle_shell_straps:
+[10May2026 16:03:00.577] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/turtle_shell_straps:
     particle
-[10May2026 12:48:27.496] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/cardboard_box_straps:
+[10May2026 16:03:00.577] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/cardboard_box_straps:
     particle
-[10May2026 12:48:27.496] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/classic_straps:
+[10May2026 16:03:00.577] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/classic_straps:
     particle
-[10May2026 12:48:27.496] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/piglin_pack_straps:
+[10May2026 16:03:00.577] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/piglin_pack_straps:
     particle
-[10May2026 12:48:27.496] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/end_crystal_frame:
+[10May2026 16:03:00.577] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/standard:
     particle
-[10May2026 12:48:27.496] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/standard:
+[10May2026 16:03:00.577] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/end_crystal_frame:
     particle
-[10May2026 12:48:27.496] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/honey_jar:
+[10May2026 16:03:00.577] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/honey_jar:
     particle
-[10May2026 12:48:27.497] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/rocket_straps:
+[10May2026 16:03:00.577] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/vintage:
     particle
-[10May2026 12:48:27.497] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/vintage:
+[10May2026 16:03:00.577] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/rocket_straps:
     particle
-[10May2026 12:48:27.497] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/cardboard_box:
+[10May2026 16:03:00.577] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/cardboard_box:
     particle
-[10May2026 12:48:27.497] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/cogwheel:
+[10May2026 16:03:00.577] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/cogwheel:
     particle
-[10May2026 12:48:27.497] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/end_crystal_straps:
+[10May2026 16:03:00.577] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/mini_chest:
     particle
-[10May2026 12:48:27.497] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/mini_chest:
+[10May2026 16:03:00.577] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/end_crystal_straps:
     particle
-[10May2026 12:48:27.497] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/sheep_plush_straps:
+[10May2026 16:03:00.577] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/sheep_plush_straps:
     particle
-[10May2026 12:48:27.497] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/wandering_bag_straps:
+[10May2026 16:03:00.578] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/wandering_bag_straps:
     particle
-[10May2026 12:48:27.497] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/vintage_straps:
+[10May2026 16:03:00.578] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/trash_can:
     particle
-[10May2026 12:48:27.497] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/classic:
+[10May2026 16:03:00.578] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/classic:
     particle
-[10May2026 12:48:27.497] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/trash_can:
+[10May2026 16:03:00.578] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/vintage_straps:
     particle
-[10May2026 12:48:27.497] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/trash_can_straps:
+[10May2026 16:03:00.578] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/turtle_shell:
     particle
-[10May2026 12:48:27.497] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/turtle_shell:
+[10May2026 16:03:00.578] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/trash_can_straps:
     particle
-[10May2026 12:48:27.497] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/honey_jar_straps:
+[10May2026 16:03:00.578] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/honey_jar_straps:
     particle
-[10May2026 12:48:27.497] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/bamboo_basket_straps:
+[10May2026 16:03:00.578] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model backpacked:backpacked/bamboo_basket_straps:
     particle
-[10May2026 12:48:27.683] [Render thread/INFO] [Augmented Backpacks/]: === REGISTERING PACKETS ===
-[10May2026 12:48:27.684] [Render thread/INFO] [Augmented Backpacks/]: Registered CraftItemPacket to server with ID: augmented:craft_item
-[10May2026 12:48:27.753] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/rendertype_text_background_see_through and FS minecraft:core/rendertype_text_background_see_through. Log output: WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
+[10May2026 16:03:00.669] [Render thread/INFO] [Augmented Backpacks/]: === REGISTERING PACKETS ===
+[10May2026 16:03:00.669] [Render thread/INFO] [Augmented Backpacks/]: Registered CraftItemPacket to server with ID: augmented:craft_item
+[10May2026 16:03:00.719] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Output of vertex shader 'overlayColor' not read by fragment shader
 
-[10May2026 12:48:27.757] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/block and FS minecraft:core/block. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+[10May2026 16:03:00.722] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/terrain and FS minecraft:core/terrain. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
 
-[10May2026 12:48:27.761] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/terrain and FS minecraft:core/terrain. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+[10May2026 16:03:00.727] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/terrain and FS minecraft:core/terrain. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
 
-[10May2026 12:48:27.764] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/animate_sprite and FS minecraft:core/animate_sprite_blit. Log output: WARNING: Output of vertex shader 'fAnimationProgress' not read by fragment shader
+[10May2026 16:03:00.732] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/rendertype_text_intensity_see_through and FS minecraft:core/rendertype_text_intensity_see_through. Log output: WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
 
-[10May2026 12:48:27.768] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/rendertype_item_entity_translucent_cull and FS minecraft:core/rendertype_item_entity_translucent_cull. Log output: WARNING: Output of vertex shader 'texCoord1' not read by fragment shader
+[10May2026 16:03:00.734] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/rendertype_translucent_moving_block and FS minecraft:core/rendertype_translucent_moving_block. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+
+[10May2026 16:03:00.736] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/rendertype_item_entity_translucent_cull and FS minecraft:core/rendertype_item_entity_translucent_cull. Log output: WARNING: Output of vertex shader 'texCoord1' not read by fragment shader
 WARNING: Output of vertex shader 'texCoord2' not read by fragment shader
 
-[10May2026 12:48:27.770] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/rendertype_translucent_moving_block and FS minecraft:core/rendertype_translucent_moving_block. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+[10May2026 16:03:00.738] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/terrain and FS minecraft:core/terrain. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
 
-[10May2026 12:48:27.774] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/terrain and FS minecraft:core/terrain. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
-
-[10May2026 12:48:27.784] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/block and FS minecraft:core/block. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
-
-[10May2026 12:48:27.793] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/rendertype_text_intensity_see_through and FS minecraft:core/rendertype_text_intensity_see_through. Log output: WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
-
-[10May2026 12:48:27.796] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
-WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
-WARNING: Output of vertex shader 'overlayColor' not read by fragment shader
-
-[10May2026 12:48:27.800] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
-WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
-WARNING: Output of vertex shader 'overlayColor' not read by fragment shader
-
-[10May2026 12:48:27.803] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/terrain and FS minecraft:core/terrain. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
-
-[10May2026 12:48:27.805] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/rendertype_entity_alpha and FS minecraft:core/rendertype_entity_alpha. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
-WARNING: Output of vertex shader 'texCoord1' not read by fragment shader
-WARNING: Output of vertex shader 'texCoord2' not read by fragment shader
-
-[10May2026 12:48:27.807] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
-
-[10May2026 12:48:27.809] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
-
-[10May2026 12:48:27.814] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Output of vertex shader 'overlayColor' not read by fragment shader
-
-[10May2026 12:48:27.817] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Output of vertex shader 'overlayColor' not read by fragment shader
-
-[10May2026 12:48:27.819] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/rendertype_entity_shadow and FS minecraft:core/rendertype_entity_shadow. Log output: WARNING: Could not find vertex shader attribute 'UV1' to match BindAttributeLocation request.
+[10May2026 16:03:00.745] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/rendertype_entity_shadow and FS minecraft:core/rendertype_entity_shadow. Log output: WARNING: Could not find vertex shader attribute 'UV1' to match BindAttributeLocation request.
 WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
 WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
 
-[10May2026 12:48:27.822] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/terrain and FS minecraft:core/terrain. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+[10May2026 16:03:00.749] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Output of vertex shader 'overlayColor' not read by fragment shader
 
-[10May2026 12:48:27.827] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/rendertype_beacon_beam and FS minecraft:core/rendertype_beacon_beam. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+[10May2026 16:03:00.752] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/terrain and FS minecraft:core/terrain. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+
+[10May2026 16:03:00.753] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/animate_sprite and FS minecraft:core/animate_sprite_blit. Log output: WARNING: Output of vertex shader 'fAnimationProgress' not read by fragment shader
+
+[10May2026 16:03:00.755] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
 WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
-
-[10May2026 12:48:27.833] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/terrain and FS minecraft:core/terrain. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
-
-[10May2026 12:48:27.836] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Output of vertex shader 'overlayColor' not read by fragment shader
-
-[10May2026 12:48:27.837] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/rendertype_text_see_through and FS minecraft:core/rendertype_text_see_through. Log output: WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
-
-[10May2026 12:48:27.838] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/rendertype_beacon_beam and FS minecraft:core/rendertype_beacon_beam. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
-WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
-
-[10May2026 12:48:27.840] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
 WARNING: Output of vertex shader 'overlayColor' not read by fragment shader
 
-[10May2026 12:48:27.842] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/rendertype_crumbling and FS minecraft:core/rendertype_crumbling. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+[10May2026 16:03:00.757] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/rendertype_crumbling and FS minecraft:core/rendertype_crumbling. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
 WARNING: Output of vertex shader 'texCoord2' not read by fragment shader
 
-[10May2026 12:48:27.842] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Output of vertex shader 'overlayColor' not read by fragment shader
+[10May2026 16:03:00.770] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/rendertype_entity_alpha and FS minecraft:core/rendertype_entity_alpha. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+WARNING: Output of vertex shader 'texCoord1' not read by fragment shader
+WARNING: Output of vertex shader 'texCoord2' not read by fragment shader
 
-[10May2026 12:48:27.846] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/block and FS minecraft:core/block. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+[10May2026 16:03:00.771] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/rendertype_beacon_beam and FS minecraft:core/rendertype_beacon_beam. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
 
-[10May2026 12:48:27.850] [Render thread/ERROR] [net.minecraft.client.sounds.SoundManager/]: Missing subtitle translation{key='subtitle.backpacked.backpack.place', args=[]} for sound event: backpacked:item.backpack.place
-[10May2026 12:48:27.850] [Render thread/ERROR] [net.minecraft.client.sounds.SoundManager/]: Missing subtitle translation{key='subtitle.backpacked.augment.lootbound.take_item', args=[]} for sound event: backpacked:augment.backpacked.lootbound.take_item
-[10May2026 12:48:27.889] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device MacBook Pro Speakers
-[10May2026 12:48:27.890] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[10May2026 12:48:27.890] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[10May2026 12:48:27.897] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/decorated_pot.png-atlas
-[10May2026 12:48:27.898] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x0 minecraft:textures/atlas/armor_trims.png-atlas
-[10May2026 12:48:27.908] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
-[10May2026 12:48:27.912] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
-[10May2026 12:48:27.913] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x2048x4 minecraft:textures/atlas/blocks.png-atlas
-[10May2026 12:48:27.950] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/chest.png-atlas
-[10May2026 12:48:27.951] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/celestials.png-atlas
-[10May2026 12:48:27.951] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
-[10May2026 12:48:27.952] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/beds.png-atlas
-[10May2026 12:48:27.952] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/items.png-atlas
-[10May2026 12:48:27.960] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
-[10May2026 12:48:27.966] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x0 minecraft:textures/atlas/map_decorations.png-atlas
-[10May2026 12:48:27.966] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/signs.png-atlas
-[10May2026 12:48:27.967] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/shulker_boxes.png-atlas
-[10May2026 12:48:28.026] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
-[10May2026 12:48:31.508] [Render thread/INFO] [Backpacked/]: Looking for Backpacked addons in 'resourcepacks'
-[10May2026 12:48:31.509] [Render thread/INFO] [Backpacked/]: Found 0 Backpacked addons
-[10May2026 12:48:32.118] [Worker-Main-6/INFO] [Backpacked/]: Adding backpack 'backpacked:bamboo_basket'
-[10May2026 12:48:32.118] [Worker-Main-6/INFO] [Backpacked/]: Adding backpack 'backpacked:cardboard_box'
-[10May2026 12:48:32.118] [Worker-Main-6/INFO] [Backpacked/]: Adding backpack 'backpacked:classic'
-[10May2026 12:48:32.118] [Worker-Main-6/INFO] [Backpacked/]: Adding backpack 'backpacked:end_crystal'
-[10May2026 12:48:32.118] [Worker-Main-6/INFO] [Backpacked/]: Adding backpack 'backpacked:honey_jar'
-[10May2026 12:48:32.119] [Worker-Main-6/INFO] [Backpacked/]: Adding backpack 'backpacked:mini_chest'
-[10May2026 12:48:32.119] [Worker-Main-6/INFO] [Backpacked/]: Adding backpack 'backpacked:piglin_pack'
-[10May2026 12:48:32.119] [Worker-Main-6/INFO] [Backpacked/]: Adding backpack 'backpacked:rocket'
-[10May2026 12:48:32.119] [Worker-Main-6/INFO] [Backpacked/]: Adding backpack 'backpacked:sheep_plush'
-[10May2026 12:48:32.119] [Worker-Main-6/INFO] [Backpacked/]: Adding backpack 'backpacked:standard'
-[10May2026 12:48:32.119] [Worker-Main-6/INFO] [Backpacked/]: Adding backpack 'backpacked:trash_can'
-[10May2026 12:48:32.119] [Worker-Main-6/INFO] [Backpacked/]: Adding backpack 'backpacked:turtle_shell'
-[10May2026 12:48:32.119] [Worker-Main-6/INFO] [Backpacked/]: Adding backpack 'backpacked:vintage'
-[10May2026 12:48:32.119] [Worker-Main-6/INFO] [Backpacked/]: Adding backpack 'backpacked:wandering_bag'
-[10May2026 12:48:32.375] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1482 recipes
-[10May2026 12:48:32.379] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1596 advancements
-[10May2026 12:48:32.380] [Render thread/INFO] [net.neoforged.neoforge.common.crafting.RecipePriorityManager/]: Loaded 0 recipe priority overrides
-[10May2026 12:48:32.468] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.11
-[10May2026 12:48:32.468] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[10May2026 12:48:32.516] [Server thread/INFO] [Framework/]: Loading server configs...
-[10May2026 12:48:32.686] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Loading 0 persistent chunks...
-[10May2026 12:48:32.700] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
-[10May2026 12:48:32.933] [Render thread/INFO] [Backpacked/]: Looking for Backpacked addons in 'resourcepacks'
-[10May2026 12:48:32.934] [Render thread/INFO] [Backpacked/]: Found 0 Backpacked addons
-[10May2026 12:48:33.109] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Loading 49 chunks for player spawn...
-[10May2026 12:48:33.109] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Preparing spawn area: 16%
-[10May2026 12:48:33.206] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Preparing spawn area: 16%
-[10May2026 12:48:33.356] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Time elapsed: 669 ms
-[10May2026 12:48:33.494] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:c9800bda] logged in with entity id 100 at (-13.715391167700265, 65.0, -24.86854796859653)
-[10May2026 12:48:33.519] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[10May2026 12:48:33.577] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Ignoring chat session from Dev due to missing Services public key
-[10May2026 12:48:33.599] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 2 reached during a single frame. New capacity will be 4.
-[10May2026 12:48:33.607] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
-[10May2026 12:48:33.609] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
-[10May2026 12:48:33.623] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 83 advancements
-[10May2026 12:48:33.676] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 4 reached during a single frame. New capacity will be 8.
-[10May2026 12:48:33.843] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 2 reached during a single frame. New capacity will be 4.
-[10May2026 12:48:33.852] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 4 reached during a single frame. New capacity will be 8.
-[10May2026 12:48:33.869] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
-[10May2026 12:48:33.904] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Received passengers for unknown entity
-[10May2026 12:48:33.997] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 16 reached during a single frame. New capacity will be 32.
-[10May2026 12:48:34.094] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 32 reached during a single frame. New capacity will be 64.
-[10May2026 12:48:34.234] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 64 reached during a single frame. New capacity will be 128.
-[10May2026 12:48:34.454] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 128 reached during a single frame. New capacity will be 256.
-[10May2026 12:48:34.882] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
-[10May2026 12:48:35.121] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 256 reached during a single frame. New capacity will be 512.
-[10May2026 12:48:35.726] [Render thread/INFO] [Augmented Backpacks/]: 30
-[10May2026 12:48:47.933] [Render thread/INFO] [Augmented Backpacks/]: 30
-[10May2026 12:48:50.005] [Render thread/INFO] [Augmented Backpacks/]: 60
-[10May2026 12:48:59.603] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[10May2026 12:48:59.612] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[10May2026 12:48:59.630] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[10May2026 12:48:59.630] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[10May2026 12:49:01.107] [Render thread/INFO] [Augmented Backpacks/]: 60
-[10May2026 12:49:03.750] [Render thread/INFO] [Augmented Backpacks/]: 60
-[10May2026 12:49:07.104] [Render thread/INFO] [Augmented Backpacks/]: 30
-[10May2026 12:49:10.776] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Gave 20 experience levels to Dev]
-[10May2026 12:49:10.786] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Gave 20 experience levels to Dev
-[10May2026 12:49:12.696] [Render thread/INFO] [Augmented Backpacks/]: 30
-[10May2026 12:49:17.244] [Render thread/INFO] [Augmented Backpacks/]: 30
-[10May2026 12:49:21.537] [Render thread/INFO] [Augmented Backpacks/]: 60
-[10May2026 12:49:32.004] [Render thread/INFO] [Augmented Backpacks/]: 60
-[10May2026 12:49:37.327] [Render thread/INFO] [Augmented Backpacks/]: 30
-[10May2026 12:49:49.761] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set 50 experience levels on Dev]
-[10May2026 12:49:49.764] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set 50 experience levels on Dev
-[10May2026 12:49:51.786] [Render thread/INFO] [Augmented Backpacks/]: 30
-[10May2026 12:50:03.987] [Render thread/INFO] [Augmented Backpacks/]: 60
-[10May2026 12:50:06.799] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set 50 experience levels on Dev]
-[10May2026 12:50:06.800] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set 50 experience levels on Dev
-[10May2026 12:50:11.311] [Render thread/INFO] [Augmented Backpacks/]: 30
-[10May2026 12:50:16.390] [Render thread/INFO] [Augmented Backpacks/]: 60
-[10May2026 12:50:21.458] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[10May2026 12:50:21.463] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[10May2026 12:50:21.478] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[10May2026 12:50:21.482] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[10May2026 12:50:23.122] [Render thread/INFO] [Augmented Backpacks/]: 60
-[10May2026 12:50:26.308] [Render thread/INFO] [Augmented Backpacks/]: 30
-[10May2026 12:50:29.858] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[10May2026 12:50:29.863] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[10May2026 12:50:29.874] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[10May2026 12:50:29.877] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[10May2026 12:50:31.756] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[10May2026 12:50:31.761] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[10May2026 12:50:31.772] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[10May2026 12:50:31.772] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[10May2026 12:50:32.267] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
-[10May2026 12:50:32.267] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[10May2026 12:50:32.273] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
-[10May2026 12:50:32.304] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[10May2026 12:50:32.304] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[10May2026 12:50:32.304] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[10May2026 12:50:32.439] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[10May2026 12:50:32.500] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[10May2026 12:50:32.509] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[10May2026 12:50:32.520] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World (1)): All chunks are saved
-[10May2026 12:50:32.520] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[10May2026 12:50:32.520] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[10May2026 12:50:32.520] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
-[10May2026 12:50:32.564] [Server thread/INFO] [Framework/]: Unloading server configs...
-[10May2026 12:50:32.565] [Server thread/INFO] [Framework/]: Sending config unload event for backpacked.backpack.toml
-[10May2026 12:50:32.565] [Server thread/INFO] [Framework/]: Sending config unload event for backpacked.wandering_trader.toml
-[10May2026 12:50:32.565] [Server thread/INFO] [Framework/]: Sending config unload event for backpacked.pickpocketing.toml
-[10May2026 12:50:32.565] [Server thread/INFO] [Framework/]: Sending config unload event for backpacked.augments.toml
-[10May2026 12:50:32.565] [Server thread/INFO] [Framework/]: Finished unloading server configs
-[10May2026 12:50:33.142] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[10May2026 16:03:00.775] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/block and FS minecraft:core/block. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+
+[10May2026 16:03:00.776] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/rendertype_beacon_beam and FS minecraft:core/rendertype_beacon_beam. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
+
+[10May2026 16:03:00.778] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Output of vertex shader 'overlayColor' not read by fragment shader
+
+[10May2026 16:03:00.780] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/terrain and FS minecraft:core/terrain. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+
+[10May2026 16:03:00.781] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/block and FS minecraft:core/block. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+
+[10May2026 16:03:00.783] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
+WARNING: Output of vertex shader 'overlayColor' not read by fragment shader
+
+[10May2026 16:03:00.787] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+WARNING: Output of vertex shader 'overlayColor' not read by fragment shader
+
+[10May2026 16:03:00.789] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/block and FS minecraft:core/block. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+
+[10May2026 16:03:00.791] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Could not find vertex shader attribute 'Normal' to match BindAttributeLocation request.
+
+[10May2026 16:03:00.805] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Output of vertex shader 'overlayColor' not read by fragment shader
+
+[10May2026 16:03:00.813] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/entity and FS minecraft:core/entity. Log output: WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
+
+[10May2026 16:03:00.814] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/rendertype_text_see_through and FS minecraft:core/rendertype_text_see_through. Log output: WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
+
+[10May2026 16:03:00.816] [Render thread/INFO] [com.mojang.blaze3d.opengl.GlProgram/]: Info log when linking program containing VS minecraft:core/rendertype_text_background_see_through and FS minecraft:core/rendertype_text_background_see_through. Log output: WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLocation request.
+
+[10May2026 16:03:00.819] [Render thread/ERROR] [net.minecraft.client.sounds.SoundManager/]: Missing subtitle translation{key='subtitle.backpacked.backpack.place', args=[]} for sound event: backpacked:item.backpack.place
+[10May2026 16:03:00.820] [Render thread/ERROR] [net.minecraft.client.sounds.SoundManager/]: Missing subtitle translation{key='subtitle.backpacked.augment.lootbound.take_item', args=[]} for sound event: backpacked:augment.backpacked.lootbound.take_item
+[10May2026 16:03:00.858] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device MacBook Pro Speakers
+[10May2026 16:03:00.859] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[10May2026 16:03:00.859] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[10May2026 16:03:00.867] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/decorated_pot.png-atlas
+[10May2026 16:03:00.868] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x0 minecraft:textures/atlas/armor_trims.png-atlas
+[10May2026 16:03:00.879] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[10May2026 16:03:00.882] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
+[10May2026 16:03:00.884] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x2048x4 minecraft:textures/atlas/blocks.png-atlas
+[10May2026 16:03:00.923] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/chest.png-atlas
+[10May2026 16:03:00.925] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/celestials.png-atlas
+[10May2026 16:03:00.925] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
+[10May2026 16:03:00.926] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/beds.png-atlas
+[10May2026 16:03:00.927] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/items.png-atlas
+[10May2026 16:03:00.935] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
+[10May2026 16:03:00.942] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[10May2026 16:03:00.943] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/signs.png-atlas
+[10May2026 16:03:00.943] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/shulker_boxes.png-atlas
+[10May2026 16:03:01.000] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
+[10May2026 16:03:05.499] [Render thread/INFO] [Backpacked/]: Looking for Backpacked addons in 'resourcepacks'
+[10May2026 16:03:05.499] [Render thread/INFO] [Backpacked/]: Found 0 Backpacked addons
+[10May2026 16:03:06.173] [Worker-Main-6/INFO] [Backpacked/]: Adding backpack 'backpacked:bamboo_basket'
+[10May2026 16:03:06.173] [Worker-Main-6/INFO] [Backpacked/]: Adding backpack 'backpacked:cardboard_box'
+[10May2026 16:03:06.174] [Worker-Main-6/INFO] [Backpacked/]: Adding backpack 'backpacked:classic'
+[10May2026 16:03:06.174] [Worker-Main-6/INFO] [Backpacked/]: Adding backpack 'backpacked:end_crystal'
+[10May2026 16:03:06.175] [Worker-Main-6/INFO] [Backpacked/]: Adding backpack 'backpacked:honey_jar'
+[10May2026 16:03:06.175] [Worker-Main-6/INFO] [Backpacked/]: Adding backpack 'backpacked:mini_chest'
+[10May2026 16:03:06.175] [Worker-Main-6/INFO] [Backpacked/]: Adding backpack 'backpacked:piglin_pack'
+[10May2026 16:03:06.175] [Worker-Main-6/INFO] [Backpacked/]: Adding backpack 'backpacked:rocket'
+[10May2026 16:03:06.176] [Worker-Main-6/INFO] [Backpacked/]: Adding backpack 'backpacked:sheep_plush'
+[10May2026 16:03:06.176] [Worker-Main-6/INFO] [Backpacked/]: Adding backpack 'backpacked:standard'
+[10May2026 16:03:06.176] [Worker-Main-6/INFO] [Backpacked/]: Adding backpack 'backpacked:trash_can'
+[10May2026 16:03:06.176] [Worker-Main-6/INFO] [Backpacked/]: Adding backpack 'backpacked:turtle_shell'
+[10May2026 16:03:06.176] [Worker-Main-6/INFO] [Backpacked/]: Adding backpack 'backpacked:vintage'
+[10May2026 16:03:06.176] [Worker-Main-6/INFO] [Backpacked/]: Adding backpack 'backpacked:wandering_bag'
+[10May2026 16:03:06.463] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1482 recipes
+[10May2026 16:03:06.468] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1596 advancements
+[10May2026 16:03:06.469] [Render thread/INFO] [net.neoforged.neoforge.common.crafting.RecipePriorityManager/]: Loaded 0 recipe priority overrides
+[10May2026 16:03:06.562] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.11
+[10May2026 16:03:06.562] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[10May2026 16:03:06.621] [Server thread/INFO] [Framework/]: Loading server configs...
+[10May2026 16:03:06.811] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Loading 0 persistent chunks...
+[10May2026 16:03:06.811] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Preparing spawn area: 16%
+[10May2026 16:03:06.827] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[10May2026 16:03:07.120] [Render thread/INFO] [Backpacked/]: Looking for Backpacked addons in 'resourcepacks'
+[10May2026 16:03:07.121] [Render thread/INFO] [Backpacked/]: Found 0 Backpacked addons
+[10May2026 16:03:07.208] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Loading 49 chunks for player spawn...
+[10May2026 16:03:07.329] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Preparing spawn area: 16%
+[10May2026 16:03:07.431] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Time elapsed: 621 ms
+[10May2026 16:03:07.576] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:9f2e42a7] logged in with entity id 85 at (-3.1044572020844208, 65.0, -25.21594200256022)
+[10May2026 16:03:07.605] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[10May2026 16:03:07.670] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Ignoring chat session from Dev due to missing Services public key
+[10May2026 16:03:07.690] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 2 reached during a single frame. New capacity will be 4.
+[10May2026 16:03:07.712] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
+[10May2026 16:03:07.714] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[10May2026 16:03:07.717] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 148 advancements
+[10May2026 16:03:07.750] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 4 reached during a single frame. New capacity will be 8.
+[10May2026 16:03:07.791] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
+[10May2026 16:03:07.843] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 2 reached during a single frame. New capacity will be 4.
+[10May2026 16:03:07.850] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 4 reached during a single frame. New capacity will be 8.
+[10May2026 16:03:07.867] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
+[10May2026 16:03:08.009] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 16 reached during a single frame. New capacity will be 32.
+[10May2026 16:03:08.127] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 32 reached during a single frame. New capacity will be 64.
+[10May2026 16:03:08.233] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 64 reached during a single frame. New capacity will be 128.
+[10May2026 16:03:08.508] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 128 reached during a single frame. New capacity will be 256.
+[10May2026 16:03:09.227] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 256 reached during a single frame. New capacity will be 512.
+[10May2026 16:03:10.584] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[10May2026 16:03:10.589] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
+[10May2026 16:03:43.030] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Removed 91 item(s) from player Dev]
+[10May2026 16:03:43.044] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Removed 91 item(s) from player Dev
+[10May2026 16:03:43.282] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[10May2026 16:03:43.293] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[10May2026 16:03:43.319] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[10May2026 16:03:43.319] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[10May2026 16:03:43.888] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[10May2026 16:03:43.888] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[10May2026 16:03:43.894] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[10May2026 16:03:43.941] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[10May2026 16:03:43.942] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[10May2026 16:03:43.942] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[10May2026 16:03:43.995] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[10May2026 16:03:44.068] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[10May2026 16:03:44.078] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[10May2026 16:03:44.089] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World (1)): All chunks are saved
+[10May2026 16:03:44.089] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[10May2026 16:03:44.089] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[10May2026 16:03:44.089] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[10May2026 16:03:44.136] [Server thread/INFO] [Framework/]: Unloading server configs...
+[10May2026 16:03:44.136] [Server thread/INFO] [Framework/]: Sending config unload event for backpacked.backpack.toml
+[10May2026 16:03:44.136] [Server thread/INFO] [Framework/]: Sending config unload event for backpacked.wandering_trader.toml
+[10May2026 16:03:44.137] [Server thread/INFO] [Framework/]: Sending config unload event for backpacked.pickpocketing.toml
+[10May2026 16:03:44.137] [Server thread/INFO] [Framework/]: Sending config unload event for backpacked.augments.toml
+[10May2026 16:03:44.137] [Server thread/INFO] [Framework/]: Finished unloading server configs
+[10May2026 16:03:45.376] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!

@@ -5,44 +5,75 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f899edff-a118-459f-ab12-045d81139cce" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/8.8/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.8/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.8/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/ce8lqanbi9dimc2s5fg6vvb7o/buildfingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/configuration-cache/ce8lqanbi9dimc2s5fg6vvb7o/buildfingerprint.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/ce8lqanbi9dimc2s5fg6vvb7o/work.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/configuration-cache/ce8lqanbi9dimc2s5fg6vvb7o/work.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/moddev/clientRunProgramArgs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/clientRunProgramArgs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/moddev/minecraft_assets.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/minecraft_assets.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/moddev/serverRunProgramArgs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/serverRunProgramArgs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/FeedingEvent.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/ModEvents.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/ModEvents.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/client/ClientRecipeCache.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/client/ClientRecipeCache.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/client/augment/menu/ExperienceMenu$ExperienceProgress.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/client/augment/menu/ExperienceMenu$ExperienceProgress.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/client/gui/widget/SimpleCraftingGrid$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/client/gui/widget/SimpleCraftingGrid$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/client/gui/widget/SimpleCraftingGrid$CraftingRow.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/client/gui/widget/SimpleCraftingGrid$CraftingRow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/client/gui/widget/SimpleCraftingGrid.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/client/gui/widget/SimpleCraftingGrid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/network/CraftItemPacket.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/network/CraftItemPacket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/network/CraftItemPacketHandler$InventorySource.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/network/CraftItemPacketHandler$InventorySource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/network/CraftItemPacketHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/network/CraftItemPacketHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/network/SyncCraftableItemsPacket.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/network/SyncCraftableItemsPacket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/network/SyncCraftableItemsPacketHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/network/SyncCraftableItemsPacketHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AugmentScreenRegistrar.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ExperienceMenu$ExperienceProgress.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ExperienceMenu.class.uniqueId2" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/downloadAssets/nfrt_artifact_manifest.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/downloadAssets/nfrt_artifact_manifest.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/config/fml.toml" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/fml.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/config/neoforge-client.toml" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/neoforge-client.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/command_history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/command_history.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2026-05-10-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2026-05-10-1.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2026-05-10-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2026-05-10-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2026-05-10-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2026-05-10-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2026-05-10-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2026-05-10-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2026-05-10-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2026-05-10-5.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2026-05-10-6.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2026-05-10-6.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2026-05-10-7.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2026-05-10-7.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2026-05-10-8.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2026-05-10-8.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/options.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/options.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/AugmentedMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/AugmentedMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/client/AugmentScreenRegistrar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/client/AugmentScreenRegistrar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/client/augment/menu/CraftingMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/client/augment/menu/CraftingMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/client/augment/menu/ExperienceMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/client/augment/menu/ExperienceMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/DIM-1/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/DIM-1/data/raids.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/DIM1/data/raids_end.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/DIM1/data/raids_end.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/advancements/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/advancements/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/data/raids.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/data/random_sequences.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/data/random_sequences.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/entities/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/entities/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/entities/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/entities/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/entities/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/entities/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/entities/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/entities/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/level.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/level.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/playerdata/380df991-f603-344c-a090-369bad2a924a.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/playerdata/380df991-f603-344c-a090-369bad2a924a.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/poi/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/poi/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/poi/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/poi/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/poi/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/poi/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/poi/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/poi/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/region/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/region/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/region/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/region/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/ModEvents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/ModEvents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/client/ClientRecipeCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/client/ClientRecipeCache.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/client/gui/widget/SimpleCraftingGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/client/gui/widget/SimpleCraftingGrid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/event/ExperienceEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/event/ExperienceEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/event/FeedingEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/event/FeedingEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/event/ToolSwapEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/event/ToolSwapEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/network/CraftItemPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/network/CraftItemPacket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/network/CraftItemPacketHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/network/CraftItemPacketHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/platform/Services.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/platform/Services.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/network/SyncCraftableItemsPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/network/SyncCraftableItemsPacket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/network/SyncCraftableItemsPacketHandler.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
