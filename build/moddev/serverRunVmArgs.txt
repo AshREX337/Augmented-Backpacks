@@ -10,7 +10,7 @@ java.base/java.lang.invoke=cpw.mods.securejarhandler
 java.base/sun.security.util=cpw.mods.securejarhandler
 --add-exports
 jdk.naming.dns/com.sun.jndi.dns=java.naming
-"-Dlog4j2.configurationFile=/Users/ashwinavadhanula/Ash/Minecraft Mod/Augmented-Backpacks/build/moddev/serverLog4j2.xml"
+"-Dlog4j2.configurationFile=/Users/ashwinavadhanula/Ash/Minecraft Mod/Augmented-Backpacks/Augmented-Backpacks/build/moddev/serverLog4j2.xml"
 -Djava.net.preferIPv6Addresses=system
 -DignoreList=mixinextras-neoforge-0.5.0.jar,client-extra,neoforge-
-"-DlegacyClassPath.file=/Users/ashwinavadhanula/Ash/Minecraft Mod/Augmented-Backpacks/build/moddev/serverLegacyClasspath.txt"
+"-DlegacyClassPath.file=/Users/ashwinavadhanula/Ash/Minecraft Mod/Augmented-Backpacks/Augmented-Backpacks/build/moddev/serverLegacyClasspath.txt"
