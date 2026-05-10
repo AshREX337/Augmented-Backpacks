@@ -49,7 +49,7 @@ public class CraftingMenu extends AugmentSettingsMenu
                     .setWidth(divider.getWidth())
                     .setPadding(2, 0, 2, 0)
                     .setHeight(16)
-                    .setIcon(Utils.rl("backpack/editbox/search"), 12, 12)
+                    .setIcon(Utils.id("backpack/editbox/search"), 12, 12)
                     .setInitialText(lastQuery)
                     .setHint(SEARCH_HINT)
                     .setCallback(s -> {
@@ -57,8 +57,8 @@ public class CraftingMenu extends AugmentSettingsMenu
                         lastQuery = s;
                     })
                     .setBackground(new WidgetSprites(
-                            Utils.rl("backpack/editbox/background"),
-                            Utils.rl("backpack/editbox/background_focused")
+                            Utils.id("backpack/editbox/background"),
+                            Utils.id("backpack/editbox/background_focused")
                     )).build();
 
             header.addChild(searchField, LayoutSettings::alignVerticallyMiddle);

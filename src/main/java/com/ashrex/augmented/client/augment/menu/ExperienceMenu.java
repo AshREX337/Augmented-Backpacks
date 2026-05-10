@@ -12,6 +12,7 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.AbstractWidget;
 import net.minecraft.client.gui.layouts.LinearLayout;
 import net.minecraft.client.gui.narration.NarrationElementOutput;
+import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.network.chat.CommonComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
@@ -37,8 +38,8 @@ public class ExperienceMenu extends AugmentSettingsMenu
     public static class ExperienceProgress extends AbstractWidget
     {
         private final AugmentHolder<ExperienceAugment> holder;
-        private static final Identifier BACKGROUND_SPRITE = Utils.rl("backpack/stepper_background");
-        private static final Identifier READY_SPRITE = Utils.rl("backpack/immortal_ready");
+        private static final Identifier BACKGROUND_SPRITE = Utils.id("backpack/stepper_background");
+        private static final Identifier READY_SPRITE = Utils.id("backpack/immortal_ready");
 
         public ExperienceProgress(int width, int height, AugmentHolder<ExperienceAugment> holder)
         {
@@ -57,16 +58,16 @@ public class ExperienceMenu extends AugmentSettingsMenu
             float percent = Math.min(1.0f, (float) experience / max);
             int fillWidth = (int) (this.getWidth() * percent);
 
-            // Draw stepper background (full width)
-            graphics.blitSprite(BACKGROUND_SPRITE, this.getX(), this.getY(), this.getWidth(), this.getHeight());
+            // Background
+            graphics.blitSprite(RenderPipelines.GUI_TEXTURED, BACKGROUND_SPRITE, this.getX(), this.getY(), this.getWidth(), this.getHeight());
 
-            // Draw ready sprite as the fill (clipped to fillWidth)
+// Fill
             if (fillWidth > 0) {
-                graphics.blitSprite(READY_SPRITE, this.getX(), this.getY(), fillWidth, this.getHeight());
+                graphics.blitSprite(RenderPipelines.GUI_TEXTURED, READY_SPRITE, this.getX(), this.getY(), fillWidth, this.getHeight());
             }
 
             // Draw text
-            String text = String.valueOf(experience);
+            String text = String.valueOf(experience + " / " + max);
             int textWidth = Minecraft.getInstance().font.width(text);
             int textX = this.getX() + (this.getWidth() - textWidth) / 2;
             int textY = this.getY() + (this.getHeight() - 8) / 2;

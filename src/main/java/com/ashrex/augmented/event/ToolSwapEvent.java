@@ -18,7 +18,7 @@ import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 
 import java.awt.event.MouseEvent;
 
-@EventBusSubscriber(modid = AugmentedMod.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = AugmentedMod.MOD_ID)
 public class ToolSwapEvent {
 
     @SubscribeEvent

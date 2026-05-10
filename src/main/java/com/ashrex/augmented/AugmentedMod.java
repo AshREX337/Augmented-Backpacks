@@ -36,7 +36,7 @@ public class AugmentedMod
         return Identifier.fromNamespaceAndPath(MOD_ID, path);
     }
 
-    @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+    @EventBusSubscriber(modid = MOD_ID)
     public static class ModEvents
     {
         @SubscribeEvent

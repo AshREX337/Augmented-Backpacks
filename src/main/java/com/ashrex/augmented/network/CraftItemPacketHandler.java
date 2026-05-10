@@ -3,6 +3,8 @@ package com.ashrex.augmented.network;
 
 import com.ashrex.augmented.AugmentedMod;
 import com.mrcrayfish.backpacked.inventory.BackpackInventory;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.Container;
 import net.minecraft.world.item.ItemStack;
@@ -34,8 +36,8 @@ public class CraftItemPacketHandler
 
             System.out.println("Processing craft for player: " + serverPlayer.getName().getString());
 
-            Optional<RecipeHolder<?>> recipeOpt = serverPlayer.level().getRecipeManager()
-                    .byKey(packet.recipeId());
+            Optional<RecipeHolder<?>> recipeOpt = serverPlayer.level().recipeAccess()
+                    .byKey(ResourceKey.create(Registries.RECIPE, packet.recipeId()));
 
             if(recipeOpt.isEmpty()) {
                 System.out.println("ERROR: Recipe not found!");
@@ -121,7 +123,7 @@ public class CraftItemPacketHandler
     private static boolean gatherIngredients(ServerPlayer player, BackpackInventory backpackInv,
                                              CraftingRecipe recipe, List<ItemStack> ingredients)
     {
-        List<Ingredient> recipeIngredients = recipe.getIngredients();
+        List<Ingredient> recipeIngredients = recipe.placementInfo().ingredients();
         Map<InventorySource, Map<Integer, Integer>> slotUsage = new HashMap<>();
         slotUsage.put(InventorySource.PLAYER, new HashMap<>());
         if(backpackInv != null) {

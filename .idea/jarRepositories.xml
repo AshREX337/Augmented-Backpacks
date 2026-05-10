@@ -36,5 +36,10 @@
       <option name="name" value="MrCrayfish" />
       <option name="url" value="https://maven.theillusivec4.top/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="JEI" />
+      <option name="name" value="JEI" />
+      <option name="url" value="https://maven.blamejared.com" />
+    </remote-repository>
   </component>
 </project>

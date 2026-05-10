@@ -10,6 +10,7 @@ import net.minecraft.core.component.DataComponents;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.state.BlockState;
@@ -20,7 +21,7 @@ import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 
 
-@EventBusSubscriber(modid = AugmentedMod.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = AugmentedMod.MOD_ID)
 public class FeedingEvent {
 
     @SubscribeEvent
@@ -64,14 +65,18 @@ public class FeedingEvent {
             }
 
             if(food == null) return;
+            FoodProperties foodProperties = food.get(DataComponents.FOOD);
+
             if(hunger > 12)
             {
-                player.eat(player.level(), food);
+                player.getFoodData().eat(foodProperties.nutrition(), foodProperties.saturation());
+                food.shrink(1);
                 return;
             }
-            if(food.get(DataComponents.FOOD).nutrition() - hunger < 2)
+            if(foodProperties.nutrition() - hunger < 2)
             {
-                player.eat(player.level(), food);
+                player.getFoodData().eat(foodProperties.nutrition(), foodProperties.saturation());
+                food.shrink(1);
             }
 
         }

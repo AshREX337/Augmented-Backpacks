@@ -1,0 +1,14 @@
+/give @s backpacked:backpack
+/clear
+/give @s minecraft:golden_carrot 30
+/give @s minecraft:cooked_beef 20
+/effect give @s minecraft:hunger infinite 40
+/effect give @s minecraft:hunger infinite 50
+/effect clear
+/give @s minecraft:netherite_sword
+/summon minecraft:skeleton
+/summon husk
+/setblock ~ ~ ~ minecraft:coal_ore
+/setblock ~ ~ ~ minecraft:nether_quartz_ore
+/xp add @s 20 levels
+/xp set @s 50 levels

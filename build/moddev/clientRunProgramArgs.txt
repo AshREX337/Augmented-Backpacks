@@ -3,7 +3,7 @@ net.neoforged.fml.startup.Client
 
 # NeoForge Run-Type Program Arguments
 --version
-21.11.0-beta
+21.11.25-beta
 --assetIndex
 29
 --assetsDir
@@ -11,7 +11,7 @@ net.neoforged.fml.startup.Client
 --fml.mcVersion
 1.21.11
 --fml.neoForgeVersion
-21.11.0-beta
+21.11.25-beta
 --fml.neoFormVersion
 20251209.172050
 

@@ -3,18 +3,19 @@ package com.ashrex.augmented.platform;
 
 import com.ashrex.augmented.AugmentedMod;
 import net.neoforged.api.distmarker.Dist;
-import net.neoforged.fml.loading.FMLLoader;
+import net.neoforged.fml.ModList;
+import net.neoforged.fml.loading.FMLEnvironment;
 
 public class Services
 {
     public static boolean isPhysicalClient()
     {
-        return FMLLoader.getDist() == Dist.CLIENT;
+        return FMLEnvironment.getDist() == Dist.CLIENT;
     }
 
     public static boolean isModLoaded(String modId)
     {
-        return FMLLoader.getLoadingModList().getModFileById(modId) != null;
+        return ModList.get().isLoaded(modId);
     }
 
     public static void checkBackpackedLoaded()
