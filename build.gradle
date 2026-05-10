@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'net.neoforged.moddev' version '1.0.21'
+    id 'net.neoforged.moddev' version '2.0.123'
 }
 
 group = 'com.ashrex'
@@ -27,14 +27,14 @@ repositories {
 
 dependencies {
     // Framework - Crucial for networking and MrCrayfish's UI system
-    implementation name: 'framework-neoforge-1.21.1-0.13.10'
+    implementation name: 'framework-neoforge-1.21.11-0.13.11'
 
     // Backpacked
-    implementation name: 'backpacked-neoforge-1.21.1-3.0.0'
+    implementation name: 'backpacked-neoforge-1.21.11-3.0.5'
 }
 
 neoForge {
-    version = "21.1.218"
+    version = neo_version
 
     // This block automatically adds your dependencies to the game runtime
     runs {

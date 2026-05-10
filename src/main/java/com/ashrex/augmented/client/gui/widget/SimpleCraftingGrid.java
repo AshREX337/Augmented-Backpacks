@@ -16,7 +16,7 @@ import net.minecraft.client.resources.sounds.SimpleSoundInstance;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.CommonComponents;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.Mth;
 import net.minecraft.world.item.Item;
@@ -39,7 +39,7 @@ import java.util.function.Supplier;
 @OnlyIn(Dist.CLIENT)
 public class SimpleCraftingGrid<T extends FilterableItems<T>> extends FrameworkSelectionList
 {
-    private static final ResourceLocation LIST_BACKGROUND_SPRITE = Utils.rl("backpack/list/background");
+    private static final Identifier LIST_BACKGROUND_SPRITE = Utils.rl("backpack/list/background");
     private static final StateSprites ITEM_SPRITES = new StateSprites(
             Utils.rl("backpack/list/item"),
             Utils.rl("backpack/list/item_hovered"),

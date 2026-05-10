@@ -4,16 +4,16 @@ import com.ashrex.augmented.AugmentedMod;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
-public record CraftItemPacket(ResourceLocation recipeId) implements CustomPacketPayload
+public record CraftItemPacket(Identifier recipeId) implements CustomPacketPayload
 {
     public static final Type<CraftItemPacket> TYPE =
             new Type<>(AugmentedMod.rl("craft_item"));
 
     public static final StreamCodec<FriendlyByteBuf, CraftItemPacket> STREAM_CODEC =
             StreamCodec.composite(
-                    ResourceLocation.STREAM_CODEC,
+                    Identifier.STREAM_CODEC,
                     CraftItemPacket::recipeId,
                     CraftItemPacket::new
             );

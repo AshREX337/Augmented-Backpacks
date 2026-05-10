@@ -7,7 +7,7 @@ import com.ashrex.augmented.common.augment.impl.FeedingAugment;
 import com.ashrex.augmented.common.augment.impl.ToolSwapAugment;
 import com.mrcrayfish.backpacked.common.augment.AugmentType;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
@@ -18,7 +18,7 @@ public class ModAugments
     public static final DeferredRegister<AugmentType<?>> AUGMENT_TYPES =
             DeferredRegister.create(
                     ResourceKey.createRegistryKey(
-                            ResourceLocation.fromNamespaceAndPath("backpacked", "augment_types")
+                            Identifier.fromNamespaceAndPath("backpacked", "augment_types")
                     ),
                     AugmentedMod.MOD_ID
             );

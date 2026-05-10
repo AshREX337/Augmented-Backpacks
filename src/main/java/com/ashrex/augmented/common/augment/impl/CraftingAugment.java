@@ -11,7 +11,7 @@ import com.mrcrayfish.backpacked.common.augment.AugmentType;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.Item;
 
 public record CraftingAugment(ItemCollection favorites) implements Augment<CraftingAugment>, FilterableItems<CraftingAugment>

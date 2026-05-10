@@ -1,0 +1,22 @@
+--------------------------------------------------------------------------------
+
+Command-Line:
+ - /Users/ashwinavadhanula/Library/Java/JavaVirtualMachines/corretto-21.0.4/Contents/Home/bin/java
+ - -jar
+ - /Users/ashwinavadhanula/.gradle/caches/modules-2/files-2.1/net.neoforged.installertools/installertools/4.0.7/679b87aecf538183e16421207505b70b868547d/installertools-4.0.7-fatjar.jar
+ - --task
+ - bundler_extract
+ - --input
+ - /Users/ashwinavadhanula/.gradle/caches/neoformruntime/artifacts/minecraft_1.21.11_server.jar
+ - --output
+ - ./output.jar
+ - --jar-only
+--------------------------------------------------------------------------------
+
+Task: BUNDLER_EXTRACT
+Input:   /Users/ashwinavadhanula/.gradle/caches/neoformruntime/artifacts/minecraft_1.21.11_server.jar
+Output:  /Users/ashwinavadhanula/Ash/Minecraft Mod/Augmented-Backpacks/Augmented-Backpacks/build/tmp/neoformruntime/20260510-101206_extractServer/./output.jar
+All:     false
+JarOnly: true
+Libs:    false
+Extracted: versions/1.21.11/server-1.21.11.jar

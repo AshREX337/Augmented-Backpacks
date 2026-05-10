@@ -1,0 +1,18 @@
+--------------------------------------------------------------------------------
+
+Command-Line:
+ - /Users/ashwinavadhanula/Library/Java/JavaVirtualMachines/corretto-21.0.4/Contents/Home/bin/java
+ - -jar
+ - /Users/ashwinavadhanula/.gradle/caches/modules-2/files-2.1/net.neoforged/mergetool/2.0.7/8d217011e2eac8f185c9351240282c780be53e72/mergetool-2.0.7-fatjar.jar
+ - --client
+ - /Users/ashwinavadhanula/.gradle/caches/neoformruntime/intermediate_results/stripClient_94022e70baeab2c995a4a57c83464568100e3a43_output.jar
+ - --server
+ - /Users/ashwinavadhanula/.gradle/caches/neoformruntime/intermediate_results/stripServer_dcb6466e7324546a638e5e7f931e2661141a5b80_output.jar
+ - --ann
+ - 1.21.11
+ - --output
+ - ./output.jar
+ - --inject
+ - false
+--------------------------------------------------------------------------------
+

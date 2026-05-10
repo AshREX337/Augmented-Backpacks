@@ -14,7 +14,7 @@ import net.minecraft.client.gui.layouts.LinearLayout;
 import net.minecraft.client.gui.narration.NarrationElementOutput;
 import net.minecraft.network.chat.CommonComponents;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 public class ExperienceMenu extends AugmentSettingsMenu
 {
@@ -37,8 +37,8 @@ public class ExperienceMenu extends AugmentSettingsMenu
     public static class ExperienceProgress extends AbstractWidget
     {
         private final AugmentHolder<ExperienceAugment> holder;
-        private static final ResourceLocation BACKGROUND_SPRITE = Utils.rl("backpack/stepper_background");
-        private static final ResourceLocation READY_SPRITE = Utils.rl("backpack/immortal_ready");
+        private static final Identifier BACKGROUND_SPRITE = Utils.rl("backpack/stepper_background");
+        private static final Identifier READY_SPRITE = Utils.rl("backpack/immortal_ready");
 
         public ExperienceProgress(int width, int height, AugmentHolder<ExperienceAugment> holder)
         {

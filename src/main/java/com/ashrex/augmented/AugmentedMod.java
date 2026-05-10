@@ -4,7 +4,7 @@ package com.ashrex.augmented;
 import com.ashrex.augmented.common.registry.ModAugments;
 import com.ashrex.augmented.network.CraftItemPacket;
 import com.ashrex.augmented.network.CraftItemPacketHandler;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
@@ -31,9 +31,9 @@ public class AugmentedMod
         LOGGER.info("Crafting augment registered");
     }
 
-    public static ResourceLocation rl(String path)
+    public static Identifier rl(String path)
     {
-        return ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
+        return Identifier.fromNamespaceAndPath(MOD_ID, path);
     }
 
     @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD)
