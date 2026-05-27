@@ -48,14 +48,14 @@ public class FeedingEvent {
                 ItemStack stack = inventory.getItem(i);
                 if(stack.is(Tags.Items.FOODS))
                 {
-                    AugmentedMod.LOGGER.info(stack.get(DataComponents.FOOD).nutrition() + ", " + max);
-                    AugmentedMod.LOGGER.info(stack.get(DataComponents.FOOD).saturation() + ", " + max);
+                    //AugmentedMod.LOGGER.info(stack.get(DataComponents.FOOD).nutrition() + ", " + max);
+                    //AugmentedMod.LOGGER.info(stack.get(DataComponents.FOOD).saturation() + ", " + max);
                     if(feeding.nutrition() && stack.get(DataComponents.FOOD).nutrition() > max)
                     {
                         max = stack.get(DataComponents.FOOD).nutrition();
                         food = stack;
                     }
-                    if(feeding.saturation() && stack.get(DataComponents.FOOD).saturation() > max)
+                    else if(feeding.saturation() && stack.get(DataComponents.FOOD).saturation() > max)
                     {
                         max = stack.get(DataComponents.FOOD).saturation();
                         food = stack;
@@ -73,6 +73,7 @@ public class FeedingEvent {
             {
                 player.eat(player.level(), food);
             }
+
 
         }
     }

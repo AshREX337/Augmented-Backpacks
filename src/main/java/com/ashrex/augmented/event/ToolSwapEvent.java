@@ -67,15 +67,17 @@ public class ToolSwapEvent {
         if(state.is(BlockTags.MINEABLE_WITH_AXE))
             if(axe != null)
             {
-                System.out.println("swapping axe");
+                //System.out.println("swapping axe");
                 player.setItemInHand(event.getHand(), axe);
                 inventory.setItem(axeI, temp);
+                temp = player.getMainHandItem();
             }
         if(state.is(BlockTags.MINEABLE_WITH_PICKAXE))
             if(pickaxe != null)
             {
                 player.setItemInHand(event.getHand(), pickaxe);
                 inventory.setItem(pickaxeI, temp);
+                temp = player.getMainHandItem();
             }
         if(state.is(BlockTags.MINEABLE_WITH_SHOVEL))
             if(shovel != null)
