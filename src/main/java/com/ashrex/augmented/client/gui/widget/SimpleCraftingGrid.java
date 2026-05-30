@@ -159,6 +159,11 @@ public class SimpleCraftingGrid<T extends FilterableItems<T>> extends FrameworkS
         }
     }
 
+    private boolean isStandardCraftingRecipe(CraftingRecipe recipe) {
+        return recipe instanceof net.minecraft.world.item.crafting.ShapedRecipe
+                || recipe instanceof net.minecraft.world.item.crafting.ShapelessRecipe;
+    }
+
     private void rebuildCraftableCache() {
         if (mc.level == null || ALL_RECIPES_CACHE == null) return;
 
@@ -169,6 +174,7 @@ public class SimpleCraftingGrid<T extends FilterableItems<T>> extends FrameworkS
         // This is O(n) where n = number of recipes, instead of O(n*m) where n = items, m = recipes
         for (RecipeHolder<CraftingRecipe> recipeHolder : ALL_RECIPES_CACHE) {
             CraftingRecipe recipe = recipeHolder.value();
+            if (!isStandardCraftingRecipe(recipe)) continue; // ADD THIS
             ItemStack result = recipe.getResultItem(mc.level.registryAccess());
             net.minecraft.world.item.Item item = result.getItem();
 
@@ -238,9 +244,8 @@ public class SimpleCraftingGrid<T extends FilterableItems<T>> extends FrameworkS
         if (recipes == null) return false;
 
         for (RecipeHolder<CraftingRecipe> recipeHolder : recipes) {
-            if (canCraftRecipe(recipeHolder.value())) {
-                return true;
-            }
+            if (!isStandardCraftingRecipe(recipeHolder.value())) continue; // ADD THIS
+            if (canCraftRecipe(recipeHolder.value())) return true;
         }
 
         return false;
@@ -250,27 +255,24 @@ public class SimpleCraftingGrid<T extends FilterableItems<T>> extends FrameworkS
     {
         Map<net.minecraft.world.item.Item, Integer> availableCounts = new HashMap<>(inventoryCounts);
 
-        for(Ingredient ingredient : recipe.getIngredients()) {
-            if(ingredient.isEmpty()) continue;
+        for (Ingredient ingredient : recipe.getIngredients()) {
+            if (ingredient.isEmpty()) continue;
 
             ItemStack[] matching = ingredient.getItems();
-            if(matching.length == 0) continue;
+            if (matching.length == 0) return false; // was: continue — this was the bug
 
             boolean found = false;
-            for(ItemStack stack : matching) {
+            for (ItemStack stack : matching) {
                 net.minecraft.world.item.Item item = stack.getItem();
                 Integer count = availableCounts.get(item);
-
-                if(count != null && count > 0) {
+                if (count != null && count > 0) {
                     availableCounts.put(item, count - 1);
                     found = true;
                     break;
                 }
             }
 
-            if(!found) {
-                return false;
-            }
+            if (!found) return false;
         }
 
         return true;

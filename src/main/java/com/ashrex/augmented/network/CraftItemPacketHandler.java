@@ -67,7 +67,8 @@ public class CraftItemPacketHandler
 
             // Build a crafting input from available items
             List<ItemStack> ingredients = new ArrayList<>();
-            if(!gatherIngredients(serverPlayer, backpackInv, recipe, ingredients)) {
+            List<SlotRef> toConsume = new ArrayList<>();
+            if (!gatherIngredients(serverPlayer, backpackInv, recipe, ingredients, toConsume)) {
                 System.out.println("ERROR: Could not gather ingredients!");
                 serverPlayer.displayClientMessage(
                         Component.translatable("augment.augmented.crafting.insufficient_materials"), true);
@@ -90,7 +91,7 @@ public class CraftItemPacketHandler
             System.out.println("Result: " + result.getItem() + " x" + result.getCount());
 
             // Consume ingredients
-            consumeIngredients(serverPlayer, backpackInv, ingredients);
+            consumeIngredients(serverPlayer, backpackInv, toConsume);
 
             // Give result
             ItemStack resultCopy = result.copy();
@@ -119,113 +120,75 @@ public class CraftItemPacketHandler
     }
 
     private static boolean gatherIngredients(ServerPlayer player, BackpackInventory backpackInv,
-                                             CraftingRecipe recipe, List<ItemStack> ingredients)
+                                             CraftingRecipe recipe, List<ItemStack> ingredients,
+                                             List<SlotRef> toConsume) // ADD THIS PARAM
     {
         List<Ingredient> recipeIngredients = recipe.getIngredients();
         Map<InventorySource, Map<Integer, Integer>> slotUsage = new HashMap<>();
         slotUsage.put(InventorySource.PLAYER, new HashMap<>());
-        if(backpackInv != null) {
-            slotUsage.put(InventorySource.BACKPACK, new HashMap<>());
-        }
+        if (backpackInv != null) slotUsage.put(InventorySource.BACKPACK, new HashMap<>());
 
-        // Fill up to 9 slots (3x3 crafting grid)
-        for(int i = 0; i < Math.min(recipeIngredients.size(), 9); i++) {
+        for (int i = 0; i < Math.min(recipeIngredients.size(), 9); i++) {
             Ingredient ingredient = recipeIngredients.get(i);
+            if (ingredient.isEmpty()) { ingredients.add(ItemStack.EMPTY); continue; }
 
-            if(ingredient.isEmpty()) {
-                ingredients.add(ItemStack.EMPTY);
-                continue;
-            }
+            boolean found = false;
 
-            ItemStack found = null;
-
-            // Try player inventory first
-            for(int slot = 0; slot < player.getInventory().getContainerSize(); slot++) {
+            // Try player inventory
+            for (int slot = 0; slot < player.getInventory().getContainerSize(); slot++) {
                 ItemStack stack = player.getInventory().getItem(slot);
-                if(stack.isEmpty() || !ingredient.test(stack)) continue;
-
+                if (stack.isEmpty() || !ingredient.test(stack)) continue;
                 int used = slotUsage.get(InventorySource.PLAYER).getOrDefault(slot, 0);
-                if(stack.getCount() > used) {
-                    found = stack.copy();
-                    found.setCount(1);
+                if (stack.getCount() > used) {
+                    ingredients.add(stack.copyWithCount(1));
                     slotUsage.get(InventorySource.PLAYER).put(slot, used + 1);
+                    toConsume.add(new SlotRef(InventorySource.PLAYER, slot)); // TRACK SLOT
+                    found = true;
                     break;
                 }
             }
 
-            // Try backpack if not found in player inventory
-            if(found == null && backpackInv != null) {
-                for(int slot = 0; slot < backpackInv.getContainerSize(); slot++) {
+            // Try backpack
+            if (!found && backpackInv != null) {
+                for (int slot = 0; slot < backpackInv.getContainerSize(); slot++) {
                     ItemStack stack = backpackInv.getItem(slot);
-                    if(stack.isEmpty() || !ingredient.test(stack)) continue;
-
+                    if (stack.isEmpty() || !ingredient.test(stack)) continue;
                     int used = slotUsage.get(InventorySource.BACKPACK).getOrDefault(slot, 0);
-                    if(stack.getCount() > used) {
-                        found = stack.copy();
-                        found.setCount(1);
+                    if (stack.getCount() > used) {
+                        ingredients.add(stack.copyWithCount(1));
                         slotUsage.get(InventorySource.BACKPACK).put(slot, used + 1);
+                        toConsume.add(new SlotRef(InventorySource.BACKPACK, slot)); // TRACK SLOT
+                        found = true;
                         break;
                     }
                 }
             }
 
-            if(found == null) {
-                return false;
-            }
-
-            ingredients.add(found);
+            if (!found) return false;
         }
 
-        // Fill remaining slots with empty stacks
-        while(ingredients.size() < 9) {
-            ingredients.add(ItemStack.EMPTY);
-        }
-
+        while (ingredients.size() < 9) ingredients.add(ItemStack.EMPTY);
         return true;
     }
 
+    record SlotRef(InventorySource source, int slot) {}
+
     private static void consumeIngredients(ServerPlayer player, BackpackInventory backpackInv,
-                                           List<ItemStack> ingredients)
+                                           List<SlotRef> toConsume)
     {
-        for(ItemStack ingredient : ingredients) {
-            if(ingredient.isEmpty()) continue;
-
-            // Try to consume from player inventory first
-            boolean consumed = false;
-            for(int slot = 0; slot < player.getInventory().getContainerSize(); slot++) {
-                ItemStack invStack = player.getInventory().getItem(slot);
-                if(ItemStack.isSameItemSameComponents(invStack, ingredient)) {
-                    System.out.println("Consuming from player inv slot " + slot);
-                    invStack.shrink(1);
-                    if(invStack.isEmpty()) {
-                        player.getInventory().setItem(slot, ItemStack.EMPTY);
-                    }
-                    consumed = true;
-                    break;
-                }
-            }
-
-            // Try backpack if not found in player inventory
-            if(!consumed && backpackInv != null) {
-                for(int slot = 0; slot < backpackInv.getContainerSize(); slot++) {
-                    ItemStack invStack = backpackInv.getItem(slot);
-                    if(ItemStack.isSameItemSameComponents(invStack, ingredient)) {
-                        System.out.println("Consuming from backpack slot " + slot);
-                        invStack.shrink(1);
-                        if(invStack.isEmpty()) {
-                            backpackInv.setItem(slot, ItemStack.EMPTY);
-                        }
-                        consumed = true;
-                        break;
-                    }
-                }
+        for (SlotRef ref : toConsume) {
+            if (ref.source() == InventorySource.PLAYER) {
+                ItemStack stack = player.getInventory().getItem(ref.slot());
+                stack.shrink(1);
+                if (stack.isEmpty()) player.getInventory().setItem(ref.slot(), ItemStack.EMPTY);
+            } else if (backpackInv != null) {
+                ItemStack stack = backpackInv.getItem(ref.slot());
+                stack.shrink(1);
+                if (stack.isEmpty()) backpackInv.setItem(ref.slot(), ItemStack.EMPTY);
             }
         }
-
         player.getInventory().setChanged();
-        if(backpackInv != null) {
-            backpackInv.setChanged();
-        }
+        if (backpackInv != null) backpackInv.setChanged();
     }
 
     private enum InventorySource {

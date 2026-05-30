@@ -1,4 +1,3 @@
-// CraftingAugment.java
 package com.ashrex.augmented.common.augment.impl;
 
 import com.ashrex.augmented.AugmentedMod;
