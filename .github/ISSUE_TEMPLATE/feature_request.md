@@ -2,7 +2,7 @@
 name: Feature request
 about: Suggest anything for a new augment or change to an existing one!
 title: ''
-labels: ''
+labels: enhancement
 assignees: ''
 
 ---
