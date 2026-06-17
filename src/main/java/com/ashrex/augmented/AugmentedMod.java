@@ -26,7 +26,7 @@ public class AugmentedMod
         LOGGER.info("Initializing {} - Adding crafting augment to Backpacked", MOD_NAME);
 
         // Register our augment type with Backpacked's registry
-        ModAugments.AUGMENT_TYPES.register(modEventBus);
+        ModAugments.AUGMENTS.register(modEventBus);
 
         LOGGER.info("Crafting augment registered");
     }

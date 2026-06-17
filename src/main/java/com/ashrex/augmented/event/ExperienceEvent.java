@@ -20,12 +20,12 @@ public class ExperienceEvent {
     {
         if (!(event.getEntity() instanceof ServerPlayer player)) return;
         int currentPlayerXP = player.experienceLevel;
-        if(player.isDeadOrDying() && !player.getTags().contains("died")) player.addTag("died");
 
         var backpackInv = BackpackHelper.getBackpackInventoriesWithAugment(player, ModAugments.EXPERIENCE_AUGMENT.get());
 
         for(var thing : backpackInv)
         {
+            if(player.isDeadOrDying() && !player.getTags().contains("save")) player.addTag("save");
             var storedXp = thing.augment().experience();
 
             var stack = thing.inventory().getBackpackStack();
@@ -40,10 +40,10 @@ public class ExperienceEvent {
             if(currentAugments.thirdAugment() == augment) pos = Augments.Position.THIRD;
             if(currentAugments.fourthAugment() == augment) pos = Augments.Position.FOURTH;
 
-            if(currentPlayerXP < storedXp && player.getTags().contains("died"))
+            if(currentPlayerXP < storedXp && player.getTags().contains("save"))
             {
                 player.setExperienceLevels(storedXp);
-                player.removeTag("died");
+                player.removeTag("save");
             }
             var limit = 30;
             if(recall != null) limit = 60;

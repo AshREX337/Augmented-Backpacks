@@ -19,6 +19,8 @@ import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 
+import java.util.Objects;
+
 
 @EventBusSubscriber(modid = AugmentedMod.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class FeedingEvent {
@@ -50,14 +52,15 @@ public class FeedingEvent {
                 {
                     //AugmentedMod.LOGGER.info(stack.get(DataComponents.FOOD).nutrition() + ", " + max);
                     //AugmentedMod.LOGGER.info(stack.get(DataComponents.FOOD).saturation() + ", " + max);
-                    if(feeding.nutrition() && stack.get(DataComponents.FOOD).nutrition() > max)
+                    assert feeding != null;
+                    if(feeding.nutrition() && Objects.requireNonNull(stack.get(DataComponents.FOOD)).nutrition() > max)
                     {
-                        max = stack.get(DataComponents.FOOD).nutrition();
+                        max = Objects.requireNonNull(stack.get(DataComponents.FOOD)).nutrition();
                         food = stack;
                     }
-                    else if(feeding.saturation() && stack.get(DataComponents.FOOD).saturation() > max)
+                    else if(feeding.saturation() && Objects.requireNonNull(stack.get(DataComponents.FOOD)).saturation() > max)
                     {
-                        max = stack.get(DataComponents.FOOD).saturation();
+                        max = Objects.requireNonNull(stack.get(DataComponents.FOOD)).saturation();
                         food = stack;
                     }
                 }
@@ -69,7 +72,7 @@ public class FeedingEvent {
                 player.eat(player.level(), food);
                 return;
             }
-            if(food.get(DataComponents.FOOD).nutrition() - hunger < 2)
+            if(Objects.requireNonNull(food.get(DataComponents.FOOD)).nutrition() - hunger < 2)
             {
                 player.eat(player.level(), food);
             }
