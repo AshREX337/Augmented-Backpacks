@@ -26,7 +26,7 @@
   "augment.backpacked.feeding.saturation": "Fullness",
   "augment.backpacked.feeding.saturation.tooltip": "Prioritize Fullness as criteria to consume food. Food will only be consumed if fullness is less than the foods saturation value.",
 
-  "augment.augmented.recovery": "Backtrack",
+  "augment.augmented.recovery": "Traceback",
   "augment.augmented.recovery.desc": "Creates a trail that leads to the players last death location",
 
   "backpacked.gui.search_hint": "Search...",

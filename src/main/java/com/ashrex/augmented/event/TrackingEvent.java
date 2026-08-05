@@ -15,7 +15,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 
-@EventBusSubscriber(modid = AugmentedMod.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = AugmentedMod.MOD_ID, bus = EventBusSubscriber.Bus.GAME)
 public class TrackingEvent {
 
     @SubscribeEvent
@@ -29,7 +29,7 @@ public class TrackingEvent {
         ).isEmpty();
 
         if(hasAugment && !player.getTags().contains("recover")) player.addTag("recover");
-        else if(player.getTags().contains("recover") && !hasAugment) player.removeTag("recover");
+        //else if(player.getTags().contains("recover") && !hasAugment) player.removeTag("recover");
 
         if(player.isDeadOrDying() && !player.getTags().contains("died") && player.getTags().contains("recover"))
         {

@@ -3,8 +3,10 @@ package com.ashrex.augmented.client.gui.widget;
 
 import com.google.common.collect.ImmutableList;
 import com.mojang.blaze3d.systems.RenderSystem;
+import com.mrcrayfish.backpacked.BackpackHelper;
 import com.mrcrayfish.backpacked.client.gui.StateSprites;
 import com.mrcrayfish.backpacked.common.FilterableItems;
+import com.mrcrayfish.backpacked.inventory.BackpackInventory;
 import com.mrcrayfish.backpacked.util.ScreenUtil;
 import com.mrcrayfish.backpacked.util.Utils;
 import com.mrcrayfish.framework.api.client.screen.widget.FrameworkSelectionList;
@@ -153,12 +155,35 @@ public class SimpleCraftingGrid<T extends FilterableItems<T>> extends FrameworkS
             }
         }
 
+        // Count items in backpack slots (SimpleContainer-backed slots in the open BackpackContainerMenu)
+        for (ItemStack stack : getBackpackSlotItems()) {
+            net.minecraft.world.item.Item item = stack.getItem();
+            int count = stack.getCount();
+            inventoryCounts.put(item, inventoryCounts.getOrDefault(item, 0) + count);
+            totalInventoryItems += count;
+        }
+
         // Mark for rebuild if inventory changed significantly
         if (Math.abs(totalInventoryItems - oldTotal) > 1) {
             needsFullRebuild = true;
         }
     }
 
+    private List<ItemStack> getBackpackSlotItems()
+    {
+        List<ItemStack> items = new ArrayList<>();
+        if (mc.player == null || mc.player.containerMenu == null) return items;
+
+        for (var slot : mc.player.containerMenu.slots) {
+            if (slot.container instanceof net.minecraft.world.SimpleContainer) {
+                ItemStack stack = slot.getItem();
+                if (!stack.isEmpty()) {
+                    items.add(stack);
+                }
+            }
+        }
+        return items;
+    }
     private boolean isStandardCraftingRecipe(CraftingRecipe recipe) {
         return recipe instanceof net.minecraft.world.item.crafting.ShapedRecipe
                 || recipe instanceof net.minecraft.world.item.crafting.ShapelessRecipe;
@@ -318,10 +343,9 @@ public class SimpleCraftingGrid<T extends FilterableItems<T>> extends FrameworkS
                     }
                 }
 
-                // Only do full update if total item count changed
-                if (tempTotal != totalInventoryItems) {
+                if (mc.player != null) {
                     updateInventoryCounts();
-                    inventoryChanged = true;
+                    inventoryChanged = true; // or compare old vs new totalInventoryItems inside updateInventoryCounts itself
                 }
             }
 

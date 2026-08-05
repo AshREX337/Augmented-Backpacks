@@ -5,15 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f899edff-a118-459f-ab12-045d81139cce" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/ce8lqanbi9dimc2s5fg6vvb7o/buildfingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/configuration-cache/ce8lqanbi9dimc2s5fg6vvb7o/buildfingerprint.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/ce8lqanbi9dimc2s5fg6vvb7o/projectfingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/configuration-cache/ce8lqanbi9dimc2s5fg6vvb7o/projectfingerprint.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/ce8lqanbi9dimc2s5fg6vvb7o/work.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/configuration-cache/ce8lqanbi9dimc2s5fg6vvb7o/work.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/moddev/clientLegacyClasspath.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/clientLegacyClasspath.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/moddev/clientRunVmArgs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/clientRunVmArgs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/moddev/minecraft_assets.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/minecraft_assets.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/moddev/nfrt_artifact_manifest.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/nfrt_artifact_manifest.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/moddev/serverLegacyClasspath.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/serverLegacyClasspath.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/moddev/serverRunVmArgs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/serverRunVmArgs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/augmented/augmented_logo.gif" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/augmented/augmented_logo.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/AugmentedMod.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/AugmentedMod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/client/gui/widget/SimpleCraftingGrid$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/client/gui/widget/SimpleCraftingGrid$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/client/gui/widget/SimpleCraftingGrid$CraftingRow.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/client/gui/widget/SimpleCraftingGrid$CraftingRow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/client/gui/widget/SimpleCraftingGrid.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/client/gui/widget/SimpleCraftingGrid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/common/augment/impl/ExperienceAugment.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/common/augment/impl/ExperienceAugment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/common/registry/ModAugments.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/common/registry/ModAugments.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/event/ExperienceEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/event/ExperienceEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/event/FeedingEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/event/FeedingEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/network/CraftItemPacketHandler$InventorySource.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/network/CraftItemPacketHandler$InventorySource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/network/CraftItemPacketHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ashrex/augmented/network/CraftItemPacketHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/AugmentedBackpacks-1.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/META-INF/neoforge.mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/META-INF/neoforge.mods.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/augmented/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/augmented/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/FeedingEvent.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/options.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/options.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/client/gui/widget/SimpleCraftingGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/client/gui/widget/SimpleCraftingGrid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/event/TrackingEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/event/TrackingEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/network/CraftItemPacketHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ashrex/augmented/network/CraftItemPacketHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/neoforge.mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/neoforge.mods.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/augmented/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/augmented/lang/en_us.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,17 +116,17 @@
     <option name="autoscrollToSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Gradle.Augmented-Backpacks [build].executor": "Run",
-    "Gradle.Augmented-Backpacks [runClient].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "update-test",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.Augmented-Backpacks [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Augmented-Backpacks [runClient].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;1.21.1-neoforge&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Gradle.Augmented-Backpacks [runClient]">
+}</component>
+  <component name="RunManager" selected="Gradle.Augmented-Backpacks [build]">
     <configuration name="Client" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
       <module name="AugmentedBackpacks.main" />
@@ -175,8 +206,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Augmented-Backpacks [runClient]" />
         <item itemvalue="Gradle.Augmented-Backpacks [build]" />
+        <item itemvalue="Gradle.Augmented-Backpacks [runClient]" />
       </list>
     </recent_temporary>
   </component>
