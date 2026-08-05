@@ -53,12 +53,12 @@ public class FeedingEvent {
                     //AugmentedMod.LOGGER.info(stack.get(DataComponents.FOOD).nutrition() + ", " + max);
                     //AugmentedMod.LOGGER.info(stack.get(DataComponents.FOOD).saturation() + ", " + max);
                     assert feeding != null;
-                    if(feeding.nutrition() && Objects.requireNonNull(stack.get(DataComponents.FOOD)).nutrition() > max)
+                    if(feeding.mode().checkNutrition() && Objects.requireNonNull(stack.get(DataComponents.FOOD)).nutrition() > max)
                     {
                         max = Objects.requireNonNull(stack.get(DataComponents.FOOD)).nutrition();
                         food = stack;
                     }
-                    else if(feeding.saturation() && Objects.requireNonNull(stack.get(DataComponents.FOOD)).saturation() > max)
+                    else if(feeding.mode().checkSaturation() && Objects.requireNonNull(stack.get(DataComponents.FOOD)).saturation() > max)
                     {
                         max = Objects.requireNonNull(stack.get(DataComponents.FOOD)).saturation();
                         food = stack;

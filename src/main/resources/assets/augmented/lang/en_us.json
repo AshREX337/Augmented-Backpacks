@@ -21,15 +21,26 @@
 
   "augment.augmented.feeding": "Gutquench",
   "augment.augmented.feeding.desc": "Auto feeds the player from the backpack.\nCan be configured to prioritize feeding based on nutrition or saturation.\nOnly one priority can be selected.",
+  "augment.backpacked.feeding.mode": "Consumption Mode",
+  "augment.backpacked.feeding.mode.tooltip": "The consumption mode determines what value is checked before consuming food",
   "augment.backpacked.feeding.nutrition": "Hunger",
-  "augment.backpacked.feeding.nutrition.tooltip": "Prioritize Hunger as criteria to consume food. Food will only be consumed if hunger is less than the foods nutrition value.",
+  "augment.backpacked.feeding.nutrition.tooltip": "Prioritize Hunger as criteria to consume food. \n\nFood will only be consumed if hunger is less than the foods nutrition value.",
   "augment.backpacked.feeding.saturation": "Fullness",
-  "augment.backpacked.feeding.saturation.tooltip": "Prioritize Fullness as criteria to consume food. Food will only be consumed if fullness is less than the foods saturation value.",
+  "augment.backpacked.feeding.saturation.tooltip": "Prioritize Fullness as criteria to consume food. \n\nFood will only be consumed if fullness is less than the foods saturation value.",
 
   "augment.augmented.recovery": "Trackback",
   "augment.augmented.recovery.desc": "Creates a trail that leads to the players last death location",
 
   "augment.augmented.trash": "Throwaway",
+  "augment.augmented.trash.desc": "Tosses unwanted items from selected inventory based on filter",
+  "augment.backpacked.trash.mode": "Inventory Mode",
+  "augment.backpacked.trash.mode.tooltip": "The inventory mode determines which inventory will drop selected items",
+  "augment.backpacked.trash.mode.backpack": "Backpack",
+  "augment.backpacked.trash.mode.player": "Player",
+  "augment.backpacked.trash.mode.both": "Both",
+  "augment.backpacked.trash.mode.backpack.tooltip": "Selected items will be dropped from backpack",
+  "augment.backpacked.trash.mode.player.tooltip": "Selected items will be dropped from player",
+  "augment.backpacked.trash.mode.both.tooltip": "Selected items will be dropped from both the backpack and player",
 
   "backpacked.gui.search_hint": "Search...",
   "backpacked.gui.active": "Active",

@@ -16,12 +16,10 @@ import net.minecraft.network.chat.Component;
 public class FeedingMenu extends AugmentSettingsMenu
 {
     private static final Component OPTIONS_LABEL = Component.translatable("backpacked.gui.options");
-    private static final Component NUTRITION_LABEL = Component.translatable("augment.backpacked.feeding.nutrition");
-    private static final Component NUTRITION_TOOLTIP = Component.translatable("augment.backpacked.feeding.nutrition.tooltip");
-    private static final Component SATURATION_LABEL = Component.translatable("augment.backpacked.feeding.saturation");
-    private static final Component SATURATION_TOOLTIP = Component.translatable("augment.backpacked.feeding.saturation.tooltip");
+    private static final Component MODE_LABEL = Component.translatable("augment.backpacked.feeding.mode");
+    private static final Component MODE_LABEL_TOOLTIP = Component.translatable("augment.backpacked.feeding.mode.tooltip");
 
-    private static final int MIN_CONTENT_WIDTH = 130;
+    private static final int MIN_CONTENT_WIDTH = 160;
 
     public FeedingMenu(PopupMenuHandler handler, AugmentHolder<FeedingAugment> holder)
     {
@@ -30,20 +28,7 @@ public class FeedingMenu extends AugmentSettingsMenu
             TitleWidget title = layout.addChild(new TitleWidget(OPTIONS_LABEL, Minecraft.getInstance().font));
             Divider divider = layout.addChild(Divider.horizontal(Math.max(MIN_CONTENT_WIDTH, title.getWidth())).colour(0xFFE0CDB7));
             title.setWidth(divider.getWidth());
-            layout.addChild(createOption(NUTRITION_LABEL, NUTRITION_TOOLTIP, BackpackButtons.onOff(() -> {
-                        return holder.get().nutrition();
-                    }, newValue -> {
-                        holder.update(holder.get().useNutrition());
-                    })
-                    .setSize(60, 18)
-                    .build(), divider.getWidth()));
-            layout.addChild(createOption(SATURATION_LABEL, SATURATION_TOOLTIP, BackpackButtons.onOff(() -> {
-                        return holder.get().saturation();
-                    }, newValue -> {
-                        holder.update(holder.get().useSaturation());
-                    })
-                    .setSize(60, 18)
-                    .build(), divider.getWidth()));
+            layout.addChild(createOption(MODE_LABEL, MODE_LABEL_TOOLTIP, BackpackButtons.values(() -> holder.get().mode(), value -> holder.update(holder.get().switchMode(value)), filterMode -> {}).setSize(60, 18).build(), divider.getWidth()));
             return layout;
         });
     }

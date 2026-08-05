@@ -5,6 +5,7 @@ import com.ashrex.augmented.AugmentedMod;
 import com.ashrex.augmented.client.augment.menu.CraftingMenu;
 import com.ashrex.augmented.client.augment.menu.ExperienceMenu;
 import com.ashrex.augmented.client.augment.menu.FeedingMenu;
+import com.ashrex.augmented.client.augment.menu.TrashMenu;
 import com.ashrex.augmented.common.registry.ModAugments;
 import com.mrcrayfish.backpacked.client.augment.AugmentSettingsFactories;
 import net.neoforged.api.distmarker.Dist;
@@ -30,8 +31,13 @@ public class AugmentScreenRegistrar
         });
 
         event.enqueueWork(() -> {
-            var expType = ModAugments.FEEDING_AUGMENT.get();
-            AugmentSettingsFactories.registerFactory(expType, FeedingMenu::new);
+            var foodType = ModAugments.FEEDING_AUGMENT.get();
+            AugmentSettingsFactories.registerFactory(foodType, FeedingMenu::new);
+        });
+
+        event.enqueueWork(() -> {
+            var trashType = ModAugments.TRASH_AUGMENT.get();
+            AugmentSettingsFactories.registerFactory(trashType, TrashMenu::new);
         });
     }
 }
