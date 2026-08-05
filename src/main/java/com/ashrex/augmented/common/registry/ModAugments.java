@@ -45,4 +45,9 @@ public class ModAugments
             "recovery",
             () -> RecoveryAugment.TYPE
     );
+
+    public static final Supplier<AugmentType<TrashAugment>> TRASH_AUGMENT = AUGMENTS.register(
+            "trash",
+            () -> TrashAugment.TYPE
+    );
 }
