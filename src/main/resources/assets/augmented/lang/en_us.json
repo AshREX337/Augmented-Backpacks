@@ -28,7 +28,7 @@
   "augment.backpacked.feeding.saturation": "Fullness",
   "augment.backpacked.feeding.saturation.tooltip": "Prioritize Fullness as criteria to consume food. \n\nFood will only be consumed if fullness is less than the foods saturation value.",
 
-  "augment.augmented.recovery": "Trackback",
+  "augment.augmented.recovery": "Walkthrough",
   "augment.augmented.recovery.desc": "Creates a trail that leads to the players last death location",
 
   "augment.augmented.trash": "Throwaway",
@@ -41,6 +41,29 @@
   "augment.backpacked.trash.mode.backpack.tooltip": "Selected items will be dropped from backpack",
   "augment.backpacked.trash.mode.player.tooltip": "Selected items will be dropped from player",
   "augment.backpacked.trash.mode.both.tooltip": "Selected items will be dropped from both the backpack and player",
+
+  "augment.augmented.stealing": "Pilferproof",
+  "augment.augmented.stealing.desc": "Plays the chosen sound when another player opens your backpack",
+  "augment.backpacked.stealing.sound": "Open Sound",
+  "augment.backpacked.stealing.sound.tooltip": "The open sound will play when the backpack is opened by another player",
+  "augment.backpacked.stealing.protect": "Protect",
+  "augment.backpacked.stealing.protect.active": "Apply knockback, blindness, and plays selected sound",
+  "augment.backpacked.stealing.protect.inactive": "Only plays selected sound",
+  "augment.backpacked.stealing.sound.chest": "Chest",
+  "augment.backpacked.stealing.sound.chest.tooltip": "The sound of a chest opening",
+  "augment.backpacked.stealing.sound.shulker": "Shulker",
+  "augment.backpacked.stealing.sound.shulker.tooltip": "The sound of a shulker opening",
+  "augment.backpacked.stealing.sound.creeper": "Creeper",
+  "augment.backpacked.stealing.sound.creeper.tooltip": "The sound of a creeper hissing",
+  "augment.backpacked.stealing.sound.dragon": "Dragon",
+  "augment.backpacked.stealing.sound.dragon.tooltip": "The sound of the dragon roaring",
+  "augment.backpacked.stealing.sound.amethyst": "Amethyst",
+  "augment.backpacked.stealing.sound.amethyst.tooltip": "The sound of amethyst glinting",
+  "augment.backpacked.stealing.sound.bell": "Bell",
+  "augment.backpacked.stealing.sound.bell.tooltip": "The sound of a bell ringing",
+  "augment.backpacked.stealing.sound.wood": "Wood",
+  "augment.backpacked.stealing.sound.wood.tooltip": "The sound of wood being stripped",
+
 
   "backpacked.gui.search_hint": "Search...",
   "backpacked.gui.active": "Active",

@@ -81,7 +81,7 @@ public record TrashAugment(ItemCollection filters, InventoryMode invMode) implem
 
         public static final Codec<InventoryMode> CODEC = StringRepresentable.fromEnum(InventoryMode::values);
         public static final StreamCodec<FriendlyByteBuf, InventoryMode> STREAM_CODEC = StreamCodec.of(FriendlyByteBuf::writeEnum, buf -> buf.readEnum(InventoryMode.class));
-        private static final String LANGUAGE_KEY = "augment.backpacked.trash.mode";
+        private static final String LANGUAGE_KEY = "augment.backpacked.trash.song";
 
         private final boolean backpack;
         private final boolean player;

@@ -5,6 +5,7 @@ import com.ashrex.augmented.common.augment.impl.FeedingAugment;
 import com.ashrex.augmented.common.augment.impl.ToolSwapAugment;
 import com.ashrex.augmented.common.registry.ModAugments;
 import com.mrcrayfish.backpacked.BackpackHelper;
+import com.mrcrayfish.backpacked.common.InventoryAugmentSnapshot;
 import com.mrcrayfish.backpacked.inventory.BackpackInventory;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.server.level.ServerPlayer;

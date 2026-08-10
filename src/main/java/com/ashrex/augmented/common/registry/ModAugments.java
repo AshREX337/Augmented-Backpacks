@@ -50,4 +50,9 @@ public class ModAugments
             "trash",
             () -> TrashAugment.TYPE
     );
+
+    public static final Supplier<AugmentType<StealAugment>> STEAL_AUGMENT = AUGMENTS.register(
+            "stealing",
+            () -> StealAugment.TYPE
+    );
 }

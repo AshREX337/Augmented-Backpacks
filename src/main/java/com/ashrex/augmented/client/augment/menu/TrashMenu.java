@@ -34,8 +34,8 @@ public class TrashMenu extends AugmentSettingsMenu {
     private static final Component FILTERS_LABEL = Component.translatable("backpacked.gui.filters");
     private static final Component SHOW_ALL_LABEL = Component.translatable("backpacked.gui.show_all");
     private static final Component ACTIVATED_ONLY_LABEL = Component.translatable("backpacked.gui.activated_only");
-    private static final Component MODE_LABEL = Component.translatable("augment.backpacked.trash.mode");
-    private static final Component MODE_LABEL_TOOLTIP = Component.translatable("augment.backpacked.trash.mode.tooltip");
+    private static final Component MODE_LABEL = Component.translatable("augment.backpacked.trash.song");
+    private static final Component MODE_LABEL_TOOLTIP = Component.translatable("augment.backpacked.trash.song.tooltip");
 
     private static final Predicate<Item> REMOVE_BLOCKS_WITHOUT_LOOT_TABLE = item -> {
         // This removes most creative/operator blocks
