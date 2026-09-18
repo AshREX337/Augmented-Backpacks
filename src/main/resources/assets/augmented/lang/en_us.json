@@ -64,6 +64,9 @@
   "augment.backpacked.stealing.sound.wood": "Wood",
   "augment.backpacked.stealing.sound.wood.tooltip": "The sound of wood being stripped",
 
+  "augment.backpacked.cooking": "Firefry",
+  "augment.backpacked.cooking.title": "Steps to cook",
+
 
   "backpacked.gui.search_hint": "Search...",
   "backpacked.gui.active": "Active",

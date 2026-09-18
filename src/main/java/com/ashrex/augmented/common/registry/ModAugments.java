@@ -55,4 +55,9 @@ public class ModAugments
             "stealing",
             () -> StealAugment.TYPE
     );
+
+    public static final Supplier<AugmentType<CookingAugment>> COOKING_AUGMENT = AUGMENTS.register(
+            "cooking",
+            () -> CookingAugment.TYPE
+    );
 }
