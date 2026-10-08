@@ -31,7 +31,7 @@
   "augment.augmented.recovery": "Walkthrough",
   "augment.augmented.recovery.desc": "Creates a trail that leads to the players last death location",
 
-  "augment.augmented.trash": "Throwaway",
+  "augment.augmented.trash": "Wastebin",
   "augment.augmented.trash.desc": "Tosses unwanted items from selected inventory based on filter",
   "augment.backpacked.trash.mode": "Inventory Mode",
   "augment.backpacked.trash.mode.tooltip": "The inventory mode determines which inventory will drop selected items",
@@ -64,7 +64,7 @@
   "augment.backpacked.stealing.sound.wood": "Wood",
   "augment.backpacked.stealing.sound.wood.tooltip": "The sound of wood being stripped",
 
-  "augment.backpacked.cooking": "Firefry",
+  "augment.backpacked.cooking": "Hotpocket",
   "augment.backpacked.cooking.title": "Steps to cook",
 
 
