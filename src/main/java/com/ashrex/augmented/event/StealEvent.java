@@ -7,6 +7,7 @@ import com.mrcrayfish.backpacked.BackpackHelper;
 import com.mrcrayfish.backpacked.inventory.BackpackInventory;
 import com.mrcrayfish.backpacked.inventory.container.BackpackContainerMenu;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.player.Player;
@@ -32,7 +33,7 @@ public class StealEvent {
             var augment = ModAugments.STEAL_AUGMENT.get();
 
             if(!menu.getAugments().has(augment)) return;
-            if(play(menu))
+            if(play(player, menu))
             {
                 player.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 200));
                 Vec3 look = player.getLookAngle();
@@ -50,26 +51,55 @@ public class StealEvent {
         }
     }
 
-    private static boolean play(BackpackContainerMenu menu)
+    private static boolean play(ServerPlayer player, BackpackContainerMenu menu)
     {
         if(menu.getAugments().firstAugment() instanceof StealAugment steal)
         {
-            steal.sound().playSound();
+            //steal.sound().playSound();
+            player.level().playSound(
+                    null,
+                    player.blockPosition(),
+                    steal.sound().checkSound(),
+                    SoundSource.PLAYERS,
+                    1.0f,
+                    1.0f
+            );
             return steal.evil();
         }
         if(menu.getAugments().secondAugment() instanceof StealAugment steal)
         {
-            steal.sound().playSound();
+            player.level().playSound(
+                    null,
+                    player.blockPosition(),
+                    steal.sound().checkSound(),
+                    SoundSource.PLAYERS,
+                    1.0f,
+                    1.0f
+            );
             return steal.evil();
         }
         if(menu.getAugments().thirdAugment() instanceof StealAugment steal)
         {
-            steal.sound().playSound();
+            player.level().playSound(
+                    null,
+                    player.blockPosition(),
+                    steal.sound().checkSound(),
+                    SoundSource.PLAYERS,
+                    1.0f,
+                    1.0f
+            );
             return steal.evil();
         }
         if(menu.getAugments().fourthAugment() instanceof StealAugment steal)
         {
-            steal.sound().playSound();
+            player.level().playSound(
+                    null,
+                    player.blockPosition(),
+                    steal.sound().checkSound(),
+                    SoundSource.PLAYERS,
+                    1.0f,
+                    1.0f
+            );
             return steal.evil();
         }
         return false;

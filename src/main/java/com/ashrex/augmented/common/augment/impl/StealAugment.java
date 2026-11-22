@@ -1,6 +1,7 @@
 package com.ashrex.augmented.common.augment.impl;
 
 import com.ashrex.augmented.AugmentedMod;
+import com.ashrex.augmented.client.ClientSoundPlayer;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import com.mrcrayfish.backpacked.client.LabelAndDescription;
@@ -18,6 +19,8 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.StringRepresentable;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.fml.loading.FMLEnvironment;
 
 import java.util.Locale;
 
@@ -92,9 +95,9 @@ public record StealAugment(SoundChoice sound, boolean evil) implements Augment<S
 
         public void playSound()
         {
-            Minecraft.getInstance().getSoundManager().play(
-                    SimpleSoundInstance.forUI(this.sound, 1.0F, 3.0f)
-            );
+            if (FMLEnvironment.dist == Dist.CLIENT)
+                ClientSoundPlayer.playClientSound(this.sound);
+
         }
 
         @Override

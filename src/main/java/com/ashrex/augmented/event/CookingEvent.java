@@ -28,39 +28,39 @@ public class CookingEvent {
     {
         if (!(event.getEntity() instanceof ServerPlayer player)) return;
 
-        var backpackInv = BackpackHelper.getBackpackInventoriesWithAugment(player, ModAugments.COOKING_AUGMENT.get());
-
-        for(var thing : backpackInv)
-        {
-            var augment = thing.augment();
-            var stepsRemaining = augment.steps();
-            var max = augment.max();
-
-            BackpackInventory inventory = thing.inventory();
-            var backpack = thing.inventory().getBackpackStack();
-            FeedingAugment feeding = BackpackHelper.findAugment(backpack, ModAugments.FEEDING_AUGMENT.get());
-
-            for(int i = inventory.getContainerSize()-1; i>=0; i--)
-            {
-                ItemStack stack = inventory.getItem(i);
-                if(stack.is(Tags.Items.FOODS))
-                {
-                    int food = Objects.requireNonNull(stack.get(DataComponents.FOOD)).nutrition();
-                    if(food == 0) return;
-
-                    var input = new SingleRecipeInput(stack);
-                    var manager = player.level().getRecipeManager();
-                    boolean canBeCooked = manager.getRecipeFor(RecipeType.SMELTING, input, player.level()).isPresent() ||
-                                        manager.getRecipeFor(RecipeType.SMOKING, input, player.level()).isPresent() ||
-                                        manager.getRecipeFor(RecipeType.CAMPFIRE_COOKING, input, player.level()).isPresent();
-
-                    if(canBeCooked) //set max
-                        return;
-                }
-
-            }
-            System.out.println(player.walkDist % 100);
-        }
+//        var backpackInv = BackpackHelper.getBackpackInventoriesWithAugment(player, ModAugments.COOKING_AUGMENT.get());
+//
+//        for(var thing : backpackInv)
+//        {
+//            var augment = thing.augment();
+//            var stepsRemaining = augment.steps();
+//            var max = augment.max();
+//
+//            BackpackInventory inventory = thing.inventory();
+//            var backpack = thing.inventory().getBackpackStack();
+//            FeedingAugment feeding = BackpackHelper.findAugment(backpack, ModAugments.FEEDING_AUGMENT.get());
+//
+//            for(int i = inventory.getContainerSize()-1; i>=0; i--)
+//            {
+//                ItemStack stack = inventory.getItem(i);
+//                if(stack.is(Tags.Items.FOODS))
+//                {
+//                    int food = Objects.requireNonNull(stack.get(DataComponents.FOOD)).nutrition();
+//                    if(food == 0) return;
+//
+//                    var input = new SingleRecipeInput(stack);
+//                    var manager = player.level().getRecipeManager();
+//                    boolean canBeCooked = manager.getRecipeFor(RecipeType.SMELTING, input, player.level()).isPresent() ||
+//                                        manager.getRecipeFor(RecipeType.SMOKING, input, player.level()).isPresent() ||
+//                                        manager.getRecipeFor(RecipeType.CAMPFIRE_COOKING, input, player.level()).isPresent();
+//
+//                    if(canBeCooked) //set max
+//                        return;
+//                }
+//
+//            }
+//            System.out.println(player.walkDist % 100);
+//        }
 
     }
 }
