@@ -62,6 +62,14 @@ public class CookingEvent {
                     fuel = stack;
                     if(cooking.cookTime() > 5)
                     {
+                        player.level().playSound(
+                                null,
+                                player.blockPosition(),
+                                SoundEvents.GENERIC_BURN,
+                                SoundSource.PLAYERS,
+                                1.0f,
+                                1.0f
+                        );
                         player.getCooldowns().addCooldown(fuel.getItem(), 100);
                         var newAugment = cooking.setTime(5);
                         fuel.consume(1, player);
@@ -100,14 +108,6 @@ public class CookingEvent {
                     var food = recipe.get().value().assemble(input, player.level().registryAccess());
                     inventory.addItem(food);
                     stack.consume(1, player);
-                    player.level().playSound(
-                            null,
-                            player.blockPosition(),
-                            SoundEvents.FIRE_EXTINGUISH,
-                            SoundSource.PLAYERS,
-                            1.0f,
-                            1.0f
-                    );
                 }
 
             }
@@ -124,6 +124,14 @@ public class CookingEvent {
 
             if(cooking.cookTime() == 0)
             {
+                player.level().playSound(
+                        null,
+                        player.blockPosition(),
+                        SoundEvents.FIRE_EXTINGUISH,
+                        SoundSource.PLAYERS,
+                        1.0f,
+                        1.0f
+                );
                 if(fuel != null && !fuel.isEmpty())
                 {
                     newAugment = cooking.setTime(5);
