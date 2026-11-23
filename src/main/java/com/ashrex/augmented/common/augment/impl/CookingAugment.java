@@ -10,36 +10,30 @@ import com.mrcrayfish.backpacked.common.augment.AugmentType;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
 
-public record CookingAugment(int steps, int max) implements Augment<CookingAugment>
+public record CookingAugment(int cookTime) implements Augment<CookingAugment>
 {
+    public static final CookingAugment INSTANCE = new CookingAugment(30);
     public static final AugmentType<CookingAugment> TYPE = new AugmentType<>(
             AugmentedMod.rl("cooking"),
             RecordCodecBuilder.mapCodec(instance -> instance.group(
-                    Codec.INT.fieldOf("steps").orElse(100).forGetter(CookingAugment::steps),
-                    Codec.INT.fieldOf("max").orElse(100).forGetter(CookingAugment::max)
+                    Codec.INT.fieldOf("cooking").orElse(0).forGetter(CookingAugment::cookTime)
             ).apply(instance, CookingAugment::new)),
             StreamCodec.composite(
-                    ByteBufCodecs.INT, CookingAugment::steps,
-                    ByteBufCodecs.INT, CookingAugment::max,
+                    ByteBufCodecs.INT, CookingAugment::cookTime,
                     CookingAugment::new
             ),
-            () -> new CookingAugment(100, 100)
+            () -> INSTANCE
     );
+
+    public CookingAugment setTime(int time)
+{
+    return new CookingAugment(time);
+}
 
     @Override
     public AugmentType<CookingAugment> type()
     {
         return TYPE;
-    }
-
-    public CookingAugment setXp(int steps)
-    {
-        return new CookingAugment(steps, this.max);
-    }
-
-    public CookingAugment setMax(int max)
-    {
-        return new CookingAugment(this.steps, max);
     }
 
 }

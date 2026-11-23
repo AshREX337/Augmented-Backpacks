@@ -42,9 +42,5 @@ public class AugmentScreenRegistrar
             AugmentSettingsFactories.registerFactory(stealType, StealMenu::new);
         });
 
-//        event.enqueueWork(() -> {
-//            var cookType = ModAugments.COOKING_AUGMENT.get();
-//            AugmentSettingsFactories.registerFactory(cookType, CookingMenu::new);
-//        });
     }
 }

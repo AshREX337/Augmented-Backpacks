@@ -64,8 +64,8 @@
   "augment.backpacked.stealing.sound.wood": "Wood",
   "augment.backpacked.stealing.sound.wood.tooltip": "The sound of wood being stripped",
 
-  "augment.backpacked.cooking": "Hotpocket",
-  "augment.backpacked.cooking.title": "Steps to cook",
+  "augment.augmented.cooking": "Hotpocket",
+  "augment.augmented.cooking.desc": "Cooks each unique food in the backpack every 30 seconds\nCooks faster if fuel is present in the backpack",
 
 
   "backpacked.gui.search_hint": "Search...",

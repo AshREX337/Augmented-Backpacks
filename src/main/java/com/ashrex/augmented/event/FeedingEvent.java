@@ -11,6 +11,7 @@ import net.minecraft.core.component.DataComponents;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.state.BlockState;
@@ -46,38 +47,33 @@ public class FeedingEvent {
 
             float max = 0;
             ItemStack food = null;
+            FoodProperties theFood = null;
             for(int i = inventory.getContainerSize()-1; i>=0; i--)
             {
                 ItemStack stack = inventory.getItem(i);
-                if(stack.is(Tags.Items.FOODS))
+                FoodProperties isFood = stack.get(DataComponents.FOOD);
+                if(isFood == null) continue;
+
+                assert feeding != null;
+                if(feeding.mode().checkNutrition() & isFood.nutrition() > max)
                 {
-                    //AugmentedMod.LOGGER.info(stack.get(DataComponents.FOOD).nutrition() + ", " + max);
-                    //AugmentedMod.LOGGER.info(stack.get(DataComponents.FOOD).saturation() + ", " + max);
-                    assert feeding != null;
-                    if(feeding.mode().checkNutrition() && Objects.requireNonNull(stack.get(DataComponents.FOOD)).nutrition() > max)
-                    {
-                        max = Objects.requireNonNull(stack.get(DataComponents.FOOD)).nutrition();
-                        food = stack;
-                    }
-                    else if(feeding.mode().checkSaturation() && Objects.requireNonNull(stack.get(DataComponents.FOOD)).saturation() > max)
-                    {
-                        max = Objects.requireNonNull(stack.get(DataComponents.FOOD)).saturation();
-                        food = stack;
-                    }
+                    max = isFood.nutrition();
+                    food = stack;
+                    theFood = isFood;
+                }
+                else if(feeding.mode().checkSaturation() && isFood.saturation() > max)
+                {
+                    max = isFood.saturation();
+                    food = stack;
+                    theFood = isFood;
                 }
             }
 
             if(food == null) return;
-            if(hunger > 12)
-            {
-                player.eat(player.level(), food);
-                return;
-            }
-            if(Objects.requireNonNull(food.get(DataComponents.FOOD)).nutrition() - hunger < 2)
+            if(hunger > 12 || theFood.nutrition() - hunger < 2)
             {
                 player.eat(player.level(), food);
             }
-
 
         }
     }
