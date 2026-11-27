@@ -10,6 +10,7 @@ import net.minecraft.core.component.DataComponents;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.state.BlockState;
@@ -48,16 +49,25 @@ public class FeedingEvent {
                 ItemStack stack = inventory.getItem(i);
                 if(stack.is(Tags.Items.FOODS))
                 {
-                    AugmentedMod.LOGGER.info(stack.get(DataComponents.FOOD).nutrition() + ", " + max);
-                    AugmentedMod.LOGGER.info(stack.get(DataComponents.FOOD).saturation() + ", " + max);
-                    if(feeding.nutrition() && stack.get(DataComponents.FOOD).nutrition() > max)
+
+                    FoodProperties foodProperties = stack.get(DataComponents.FOOD);
+
+                    // FIX: Some items like `cake` may have a `c:foods` tag
+                    // but is only edible as a block
+                    if (foodProperties == null) {
+                        continue;
+                    }
+
+                    AugmentedMod.LOGGER.info(foodProperties.nutrition() + ", " + max);
+                    AugmentedMod.LOGGER.info(foodProperties.saturation() + ", " + max);
+                    if(feeding.nutrition() && foodProperties.nutrition() > max)
                     {
-                        max = stack.get(DataComponents.FOOD).nutrition();
+                        max = foodProperties.nutrition();
                         food = stack;
                     }
-                    if(feeding.saturation() && stack.get(DataComponents.FOOD).saturation() > max)
+                    if(feeding.saturation() && foodProperties.saturation() > max)
                     {
-                        max = stack.get(DataComponents.FOOD).saturation();
+                        max = foodProperties.saturation();
                         food = stack;
                     }
                 }
